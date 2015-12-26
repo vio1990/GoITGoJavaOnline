@@ -3,6 +3,12 @@ package com.ozerian.module6.bouquet;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/*
+В данном классе помимо существующих классов исключительных ситуаций обрабатывается
+созданная мною исключительная ситуация ZeroQuantityException, срабатывающая, если пользователь введет
+ "0" при созддании букета и указании количества цветов
+ */
+
 public class FlowerBouquet {
     Scanner scanner = new Scanner(System.in);
     private String[] bouquet;
@@ -26,22 +32,6 @@ public class FlowerBouquet {
 
     public String[] getBouquet() {
         return bouquet;
-    }
-
-    public void addFlower(Rose rose, int position) {
-        getBouquet()[position] = rose.getName();
-    }
-
-    public void addFlower(Aster aster, int position) {
-        getBouquet()[position] = aster.getName();
-    }
-
-    public void addFlower(Daisy daisy, int position) {
-        getBouquet()[position] = daisy.getName();
-    }
-
-    public void addFlower(Tulip tulip, int position) {
-        getBouquet()[position] = tulip.getName();
     }
 
     public void bouquetContain() {

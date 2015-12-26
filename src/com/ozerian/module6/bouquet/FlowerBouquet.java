@@ -1,11 +1,27 @@
 package com.ozerian.module6.bouquet;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class FlowerBouquet {
+    Scanner scanner = new Scanner(System.in);
     private String[] bouquet;
 
-
-    public FlowerBouquet(int size) {
-        this.bouquet = new String[size];
+    public FlowerBouquet() {
+        try {
+            int size = scanner.nextInt();
+            if (size == 0) {
+                throw new ZeroQuantityFlowersException(size);
+            }
+            this.bouquet = new String[size];
+            System.out.println("The quantity of flowers is: " + size);
+        } catch (InputMismatchException e) {
+            System.out.println("[Error]: Please, enter integer numbers");
+        } catch (NegativeArraySizeException en) {
+            System.out.println("[Error] The bouquet cannot include negative quantity");
+        } catch (ZeroQuantityFlowersException e) {
+            System.out.println("[Error] The flowers quantity should be more than 0");
+        }
     }
 
     public String[] getBouquet() {

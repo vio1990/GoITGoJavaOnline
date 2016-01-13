@@ -4,9 +4,9 @@ public class TemperatureConverter {
     public static void main(String[] args) {
         TemperatureValue value = new TemperatureValue();
 
-        value.celciusToFahrenheit(50);
-        value.fahrenheitToCelcius(40);
-        value.fahrenheitToCelcius(-15);
-        value.celciusToFahrenheit(-20);
+        value.celsiusToFahrenheit(50);
+        value.fahrenheitToCelsius(40);
+        value.fahrenheitToCelsius(-15);
+        value.celsiusToFahrenheit(-20);
     }
 }

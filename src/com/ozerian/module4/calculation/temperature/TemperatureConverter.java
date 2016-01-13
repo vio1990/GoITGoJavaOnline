@@ -7,6 +7,6 @@ public class TemperatureConverter {
         value.celsiusToFahrenheit(50);
         value.fahrenheitToCelsius(40);
         value.fahrenheitToCelsius(-15);
-        value.celsiusToFahrenheit(-20);
+        value.celsiusToFahrenheit(-22);
     }
 }

@@ -4,11 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/src/com/ozerian/module6/bouquet/MainClass.java" line="23" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51c1d720-7399-4080-9f76-fd65a97cba12" name="Default" comment="commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozerian/module8/ListUtilities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoITOzerianHomeworks/com/ozerian/module3/bouquet/Flower.class" afterPath="$PROJECT_DIR$/out/production/GoITOzerianHomeworks/com/ozerian/module3/bouquet/Flower.class" />
+    <list default="true" id="51c1d720-7399-4080-9f76-fd65a97cba12" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/bouquet/Flower.java" afterPath="$PROJECT_DIR$/src/com/ozerian/module3/bouquet/Flower.java" />
     </list>
     <ignored path="GoITOzerianHomeworks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -695,7 +692,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453116170400</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit">
+      <created>1453133827511</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1453133827511</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">

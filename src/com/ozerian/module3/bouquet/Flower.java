@@ -19,9 +19,6 @@ public abstract class Flower {
 
     @Override
     public String toString() {
-        return "Flower{" +
-                "name='" + name + '\'' +
-                ", color='" + color + '\'' +
-                '}';
+        return "|\t" + name + "\t|\t" + color + "\t|";
     }
 }

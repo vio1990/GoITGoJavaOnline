@@ -21,16 +21,16 @@ public class MainClass {
             for (int i = 0; i < fb.getBouquet().length; i++) {
                 System.out.println("Enter the name of flower");
                 String name = scanner.nextLine();
-                if (name.equalsIgnoreCase("rose") || name.equalsIgnoreCase("Rose")) {
+                if (name.equalsIgnoreCase("rose")) {
                     name = rose.getName();
                     fb.getBouquet()[i] = name;
-                } else if (name.equalsIgnoreCase("aster") || name.equalsIgnoreCase("Aster")) {
+                } else if (name.equalsIgnoreCase("aster")) {
                     name = aster.getName();
                     fb.getBouquet()[i] = name;
-                } else if (name.equalsIgnoreCase("daisy") || name.equalsIgnoreCase("Daisy")) {
+                } else if (name.equalsIgnoreCase("daisy")) {
                     name = daisy.getName();
                     fb.getBouquet()[i] = name;
-                } else if (name.equalsIgnoreCase("tulip") || name.equalsIgnoreCase("Tulip")) {
+                } else if (name.equalsIgnoreCase("tulip")) {
                     name = tulip.getName();
                     fb.getBouquet()[i] = name;
                 } else {

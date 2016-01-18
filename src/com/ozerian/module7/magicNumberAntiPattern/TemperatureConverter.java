@@ -1,4 +1,4 @@
-package com.ozerian.module4.calculation.temperature;
+package com.ozerian.module7.magicNumberAntiPattern;
 
 public class TemperatureConverter {
     public static void main(String[] args) {

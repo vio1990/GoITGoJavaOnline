@@ -4,8 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/com/ozerian/module6/bouquet/MainClass.java" line="23" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51c1d720-7399-4080-9f76-fd65a97cba12" name="Default" comment="commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozerian/module8/Main.java" />
+    <list default="true" id="51c1d720-7399-4080-9f76-fd65a97cba12" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GoITOzerianHomeworks.iws" />
@@ -711,7 +710,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453133942826</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit">
+      <created>1453134041614</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1453134041614</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">

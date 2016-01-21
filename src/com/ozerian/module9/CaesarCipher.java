@@ -14,54 +14,53 @@ public class CaesarCipher {
     public static final int ENGLISH_ALPHABET_CAPACITY = 26;
     public static final int SPACE_SYMBOL_ASCII = 32;
 
-    public static String caesarDecode(String m, int key) {
-        char[] chars = m.toCharArray();
+    public static String caesarEncode(String text, int shift) {
+        char[] chars = text.toCharArray();
         for (int i = 0; i < chars.length; i++) {
-            char c = chars[i];
-            if (c >= CAPITAL_LETTER_ASCII_FIRST_A && c <= CAPITAL_LETTER_ASCII_LAST_Z) {
-                int x = c - CAPITAL_LETTER_ASCII_FIRST_A;
-                x = (x - key + ENGLISH_ALPHABET_CAPACITY) % ENGLISH_ALPHABET_CAPACITY;
-                if (key < 0) {
-                    x = +ENGLISH_ALPHABET_CAPACITY;
+            char letterFromText = chars[i];
+            if (letterFromText >= CAPITAL_LETTER_ASCII_FIRST_A && letterFromText <= CAPITAL_LETTER_ASCII_LAST_Z) {
+                int letterPosition = letterFromText - CAPITAL_LETTER_ASCII_FIRST_A;
+                letterPosition = (letterPosition + shift) % ENGLISH_ALPHABET_CAPACITY;
+                if (shift < 0) {
+                    letterPosition = +ENGLISH_ALPHABET_CAPACITY;
                 }
-                chars[i] = (char) (x + CAPITAL_LETTER_ASCII_FIRST_A);
-            } else if (c >= SMALL_LETTER_ASCII_FIRST_A && c <= SMALL_LETTER_ASCII_LAST_Z) {
-                int x = c - SMALL_LETTER_ASCII_FIRST_A;
-                x = (x - key + ENGLISH_ALPHABET_CAPACITY) % ENGLISH_ALPHABET_CAPACITY;
-                if (key < 0) {
-                    x = +ENGLISH_ALPHABET_CAPACITY;
+                chars[i] = (char) (letterPosition + CAPITAL_LETTER_ASCII_FIRST_A);
+            } else if (letterFromText >= SMALL_LETTER_ASCII_FIRST_A && letterFromText <= SMALL_LETTER_ASCII_LAST_Z) {
+                int letterPosition = letterFromText - SMALL_LETTER_ASCII_FIRST_A;
+                letterPosition = (letterPosition + shift) % ENGLISH_ALPHABET_CAPACITY;
+                if (shift < 0) {
+                    letterPosition = +ENGLISH_ALPHABET_CAPACITY;
                 }
-                chars[i] = (char) (x + SMALL_LETTER_ASCII_FIRST_A);
-            } else if (c == SPACE_SYMBOL_ASCII) {
+                chars[i] = (char) (letterPosition + SMALL_LETTER_ASCII_FIRST_A);
+            } else if (letterFromText == SPACE_SYMBOL_ASCII) {
                 chars[i] = (char) SPACE_SYMBOL_ASCII;
             }
         }
         return String.valueOf(chars);
     }
 
-
-    public static String caesarEncode(String m, int key) {
-        char[] chars = m.toCharArray();
-        for (int i = 0; i < chars.length; i++) {
-            char c = chars[i];
-            if (c >= CAPITAL_LETTER_ASCII_FIRST_A && c <= CAPITAL_LETTER_ASCII_LAST_Z) {
-                int x = c - CAPITAL_LETTER_ASCII_FIRST_A;
-                x = (x + key) % ENGLISH_ALPHABET_CAPACITY;
-                if (key < 0) {
-                    x = +ENGLISH_ALPHABET_CAPACITY;
+    public static String caesarDecode(String text, int shift) {
+        char[] textAsChar = text.toCharArray();
+        for (int i = 0; i < textAsChar.length; i++) {
+            char letterFromText = textAsChar[i];
+            if (letterFromText >= CAPITAL_LETTER_ASCII_FIRST_A && letterFromText <= CAPITAL_LETTER_ASCII_LAST_Z) {
+                int letterPosition = letterFromText - CAPITAL_LETTER_ASCII_FIRST_A;
+                letterPosition = (letterPosition - shift + ENGLISH_ALPHABET_CAPACITY) % ENGLISH_ALPHABET_CAPACITY;
+                if (shift < 0) {
+                    letterPosition = +ENGLISH_ALPHABET_CAPACITY;
                 }
-                chars[i] = (char) (x + CAPITAL_LETTER_ASCII_FIRST_A);
-            } else if (c >= SMALL_LETTER_ASCII_FIRST_A && c <= SMALL_LETTER_ASCII_LAST_Z) {
-                int x = c - SMALL_LETTER_ASCII_FIRST_A;
-                x = (x + key) % ENGLISH_ALPHABET_CAPACITY;
-                if (key < 0) {
-                    x = +ENGLISH_ALPHABET_CAPACITY;
+                textAsChar[i] = (char) (letterPosition + CAPITAL_LETTER_ASCII_FIRST_A);
+            } else if (letterFromText >= SMALL_LETTER_ASCII_FIRST_A && letterFromText <= SMALL_LETTER_ASCII_LAST_Z) {
+                int letterPosition = letterFromText - SMALL_LETTER_ASCII_FIRST_A;
+                letterPosition = (letterPosition - shift + ENGLISH_ALPHABET_CAPACITY) % ENGLISH_ALPHABET_CAPACITY;
+                if (shift < 0) {
+                    letterPosition = +ENGLISH_ALPHABET_CAPACITY;
                 }
-                chars[i] = (char) (x + SMALL_LETTER_ASCII_FIRST_A);
-            } else if (c == SPACE_SYMBOL_ASCII) {
-                chars[i] = (char) SPACE_SYMBOL_ASCII;
+                textAsChar[i] = (char) (letterPosition + SMALL_LETTER_ASCII_FIRST_A);
+            } else if (letterFromText == SPACE_SYMBOL_ASCII) {
+                textAsChar[i] = (char) SPACE_SYMBOL_ASCII;
             }
         }
-        return String.valueOf(chars);
+        return String.valueOf(textAsChar);
     }
 }

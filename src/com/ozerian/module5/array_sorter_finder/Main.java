@@ -2,15 +2,22 @@ package com.ozerian.module5.array_sorter_finder;
 
 public class Main {
     public static void main(String[] args) {
-        Array array = new Array();
-        Finder finder = new Finder();
-        Sorter sorter = new Sorter();
 
-        int[] numbers = array.arrayInit(10);
+        int[] numbers = Array.arrayInit(10);
+        Array.arrayPrint(numbers);
 
-        finder.minArrayValue(numbers);
-        finder.maxArrayValue(numbers);
-        sorter.bubbleSort(numbers);
-        sorter.gnomeSort(numbers);
+        int minValue = Finder.minArrayValue(numbers);
+        System.out.println(minValue + " is minimum array's number");
+
+        int maxValue = Finder.maxArrayValue(numbers);
+        System.out.println(maxValue + " is maximum array's number");
+
+        Sorter.bubbleSort(numbers);
+        System.out.println("SorterArray: ");
+        Array.arrayPrint(numbers);
+
+        Sorter.gnomeSort(numbers);
+        System.out.println("SorterArray: ");
+        Array.arrayPrint(numbers);
     }
 }

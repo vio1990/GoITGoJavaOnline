@@ -7,12 +7,12 @@ package com.ozerian.module9;
  */
 public class CaesarCipher {
 
-    public static final int CAPITAL_LETTER_ASCII_FIRST_A = 65;
-    public static final int CAPITAL_LETTER_ASCII_LAST_Z = 90;
-    public static final int SMALL_LETTER_ASCII_FIRST_A = 97;
-    public static final int SMALL_LETTER_ASCII_LAST_Z = 122;
-    public static final int ENGLISH_ALPHABET_CAPACITY = 26;
-    public static final int SPACE_SYMBOL_ASCII = 32;
+    private static final int CAPITAL_LETTER_ASCII_FIRST_A = 65;
+    private static final int CAPITAL_LETTER_ASCII_LAST_Z = 90;
+    private static final int SMALL_LETTER_ASCII_FIRST_A = 97;
+    private static final int SMALL_LETTER_ASCII_LAST_Z = 122;
+    private static final int ENGLISH_ALPHABET_CAPACITY = 26;
+    private static final int SPACE_SYMBOL_ASCII = 32;
 
     public static String caesarEncode(String text, int shift) {
         char[] chars = text.toCharArray();

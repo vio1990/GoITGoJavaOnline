@@ -4,9 +4,9 @@ public class Point {
     private int x;
     private int y;
 
-    public void getDistance(Point point){
+    public double getDistance(Point point){
         double distance = Math.sqrt(Math.pow(x - point.x, 2) + Math.pow(y - point.y, 2));
-        System.out.printf("The distance between points is %.2f\n", distance);
+        return distance;
     }
 
     Point(int x, int y) {

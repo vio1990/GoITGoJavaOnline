@@ -6,7 +6,7 @@ public class Main {
         Finder finder = new Finder();
         Sorter sorter = new Sorter();
 
-        int[] numbers = array.arrayInit(20);
+        int[] numbers = array.arrayInit(10);
 
         finder.minArrayValue(numbers);
         finder.maxArrayValue(numbers);

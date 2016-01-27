@@ -2,14 +2,14 @@ package com.ozerian.module4.calculation.temperature;
 
 public class TemperatureValue {
 
-    public void celsiusToFahrenheit(double temperatureValue) {
+    public double celsiusToFahrenheit(double temperatureValue) {
         double convertedFahrenheitValue = (temperatureValue * 1.8) + 32;
-        System.out.printf("%.2f oC equals: %.2f oF\n", temperatureValue, convertedFahrenheitValue);
+        return convertedFahrenheitValue;
     }
 
-    public void fahrenheitToCelsius(double temperatureValue) {
+    public double fahrenheitToCelsius(double temperatureValue) {
         double convertedCelsiusValue = (temperatureValue - 32) / 1.8;
-        System.out.printf("%.2f oF equals: %.2f oC\n", temperatureValue, convertedCelsiusValue);
+        return convertedCelsiusValue;
     }
 
 }

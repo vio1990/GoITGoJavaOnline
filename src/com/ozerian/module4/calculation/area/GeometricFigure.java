@@ -8,20 +8,20 @@ public class GeometricFigure {
     private double triangleSide2;
     private double triangleSide3;
 
-    public void circleArea() {
+    public double circleArea() {
         double circleArea = circleRadius * circleRadius * Math.PI;
-        System.out.printf("The square of circle is: %.2f\n", circleArea);
+        return circleArea;
     }
 
-    public void rectangleArea() {
+    public double rectangleArea() {
         double rectangleArea = rectangleWidth * rectangleLength;
-        System.out.printf("The square of rectangle is: %.2f\n",  rectangleArea);
+        return rectangleArea;
     }
 
-    public void triangleArea() {
+    public double triangleArea() {
         double perimeter = triangleSide1 + triangleSide2 + triangleSide3;
         double triangleArea = Math.sqrt(perimeter * (perimeter - triangleSide1) * (perimeter - triangleSide2) * (perimeter - triangleSide3));
-        System.out.printf("The square of triangle is: %.2f\n",  triangleArea);
+        return triangleArea;
     }
 
     GeometricFigure(double radius) {

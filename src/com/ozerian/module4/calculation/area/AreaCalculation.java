@@ -6,8 +6,8 @@ public class AreaCalculation {
         GeometricFigure rectangle = new GeometricFigure(3.7, 5.4);
         GeometricFigure triangle = new GeometricFigure(2.6, 5.3, 6.7);
 
-        circle.circleArea();
-        rectangle.rectangleArea();
-        triangle.triangleArea();
+        System.out.printf("The square of rectangle is: %.2f\n", rectangle.rectangleArea());
+        System.out.printf("The square of triangle is: %.2f\n",  triangle.triangleArea());
+        System.out.printf("The square of circle is: %.2f\n",  circle.circleArea());
     }
 }

@@ -8,8 +8,10 @@ public class Main {
         try {
             File textMessageFile = new File("Encode text message.txt");
             String message = MessageWriterReader.enter();
-            MessageWriterReader.encodingMessageTextFileCreator(message, 5, textMessageFile);
-            MessageWriterReader.decodingMessageFilePrinter(textMessageFile, 5);
+            String encodeMessage = MessageWriterReader.encodingMessageFileWriter(message, 5, textMessageFile);
+            System.out.println(encodeMessage);
+            String decodeMessage = MessageWriterReader.decodingMessageReader(textMessageFile, 5);
+            System.out.println(decodeMessage);
         } catch (IOException ex) {
             ex.printStackTrace();
             System.out.println("Error!");

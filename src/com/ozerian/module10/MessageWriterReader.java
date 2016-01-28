@@ -13,22 +13,23 @@ public class MessageWriterReader {
         }
     }
 
-    public static void decodingMessageFilePrinter(File file, int decodingKey)throws IOException {
+    public static String encodingMessageFileWriter(String message, int codingKey, File file) throws IOException {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
+            message = CaesarCipher.caesarEncode(message, codingKey);
+            writer.write(message);
+            return message;
+        }
+    }
+
+    public static String decodingMessageReader(File file, int decodingKey)throws IOException {
         try (BufferedReader fileReader = new BufferedReader(new FileReader(file))) {
             StringBuilder stringBuilder = new StringBuilder();
             String decodeMessage = fileReader.readLine();
             decodeMessage = CaesarCipher.caesarDecode(decodeMessage, decodingKey);
             stringBuilder.append(decodeMessage);
-
-            System.out.println(stringBuilder.toString());
+            return stringBuilder.toString();
         }
     }
 
-    public static void encodingMessageTextFileCreator(String message, int codingKey, File file) throws IOException {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
-            message = CaesarCipher.caesarEncode(message, codingKey);
-            writer.write(message);
-        }
-    }
 }
 

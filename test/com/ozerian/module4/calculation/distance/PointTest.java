@@ -28,20 +28,20 @@ public class PointTest {
 
     @Test
     public void testGetY() throws Exception {
-        final int Y = 2;
-        final int expectedValue = Y;
+        final int y = 2;
+        final int expectedValue = y;
 
-        point = new Point(0, Y);
+        point = new Point(0, y);
         final int actualValue = point.getY();
         assertEquals(expectedValue, actualValue);
     }
 
     @Test
     public void testGetX() throws Exception {
-        final int X = 5;
-        final int expectedValue = X;
+        final int x = 5;
+        final int expectedValue = x;
 
-        point = new Point(X, 0);
+        point = new Point(x, 0);
         final int actualValue = point.getX();
         assertEquals(expectedValue, actualValue);
     }

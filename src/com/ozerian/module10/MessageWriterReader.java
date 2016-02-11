@@ -14,27 +14,28 @@ public class MessageWriterReader {
         }
     }
 
-    public static void decodingMessageFilePrinter(File file, int decodingKey)throws IOException {
-        try (BufferedReader fileReader = new BufferedReader(new FileReader(file))) {
-            StringBuilder stringBuilder = new StringBuilder();
-            String decodeMessage = fileReader.readLine();
-            decodeMessage = CaesarCipher.caesarDecode(decodeMessage, decodingKey);
-            stringBuilder.append(decodeMessage);
-            System.out.println(stringBuilder.toString());
-        } catch (FileNotFoundException ex) {
-            System.out.println("The required file isn't found!");
-        } catch (CharacterCodingException ex) {
-            System.out.println("Error! There are problems with encoding");
-        }
-    }
-
-    public static void encodingMessageTextFileCreator(String message, int codingKey, File file) throws IOException {
+    public static String encodingMessageFileWriter(String message, int codingKey, File file) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
             message = CaesarCipher.caesarEncode(message, codingKey);
             writer.write(message);
         } catch (CharacterCodingException ex) {
-            System.out.println("Error! There are problems with decoding");
+            System.out.println("Wrong coding process!");
         }
+        return message;
     }
-}
 
+    public static String decodingMessageReader(File file, int decodingKey)throws IOException {
+        StringBuilder stringBuilder = new StringBuilder();
+        try (BufferedReader fileReader = new BufferedReader(new FileReader(file))) {
+            String decodeMessage = fileReader.readLine();
+            decodeMessage = CaesarCipher.caesarDecode(decodeMessage, decodingKey);
+            stringBuilder.append(decodeMessage);
+        } catch (FileNotFoundException ex) {
+            System.out.println("The required file isn't found!");
+        } catch (CharacterCodingException ex) {
+            System.out.println("Wrong decoding process!");
+        }
+        return stringBuilder.toString();
+    }
+
+}

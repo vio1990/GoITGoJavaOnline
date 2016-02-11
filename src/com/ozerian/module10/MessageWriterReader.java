@@ -19,6 +19,7 @@ public class MessageWriterReader {
             message = CaesarCipher.caesarEncode(message, codingKey);
             writer.write(message);
         } catch (CharacterCodingException ex) {
+            ex.printStackTrace();
             System.out.println("Wrong coding process!");
         }
         return message;
@@ -31,8 +32,10 @@ public class MessageWriterReader {
             decodeMessage = CaesarCipher.caesarDecode(decodeMessage, decodingKey);
             stringBuilder.append(decodeMessage);
         } catch (FileNotFoundException ex) {
+            ex.printStackTrace();
             System.out.println("The required file isn't found!");
         } catch (CharacterCodingException ex) {
+            ex.printStackTrace();
             System.out.println("Wrong decoding process!");
         }
         return stringBuilder.toString();

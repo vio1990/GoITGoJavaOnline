@@ -4,6 +4,7 @@ package com.ozerian.module10;
 import com.ozerian.module9.CaesarCipher;
 
 import java.io.*;
+import java.nio.charset.CharacterCodingException;
 
 public class MessageWriterReader {
 
@@ -19,8 +20,11 @@ public class MessageWriterReader {
             String decodeMessage = fileReader.readLine();
             decodeMessage = CaesarCipher.caesarDecode(decodeMessage, decodingKey);
             stringBuilder.append(decodeMessage);
-
             System.out.println(stringBuilder.toString());
+        } catch (FileNotFoundException ex) {
+            System.out.println("The required file isn't found!");
+        } catch (CharacterCodingException ex) {
+            System.out.println("Error! There are problems with encoding");
         }
     }
 
@@ -28,6 +32,8 @@ public class MessageWriterReader {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
             message = CaesarCipher.caesarEncode(message, codingKey);
             writer.write(message);
+        } catch (CharacterCodingException ex) {
+            System.out.println("Error! There are problems with decoding");
         }
     }
 }

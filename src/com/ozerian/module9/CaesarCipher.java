@@ -40,27 +40,7 @@ public class CaesarCipher {
     }
 
     public static String caesarDecode(String text, int shift) {
-        char[] textAsChar = text.toCharArray();
-        for (int i = 0; i < textAsChar.length; i++) {
-            char letterFromText = textAsChar[i];
-            if (letterFromText >= CAPITAL_LETTER_ASCII_FIRST_A && letterFromText <= CAPITAL_LETTER_ASCII_LAST_Z) {
-                int letterPosition = letterFromText - CAPITAL_LETTER_ASCII_FIRST_A;
-                letterPosition = (letterPosition - shift + ENGLISH_ALPHABET_CAPACITY) % ENGLISH_ALPHABET_CAPACITY;
-                if (shift < 0) {
-                    letterPosition = +ENGLISH_ALPHABET_CAPACITY;
-                }
-                textAsChar[i] = (char) (letterPosition + CAPITAL_LETTER_ASCII_FIRST_A);
-            } else if (letterFromText >= SMALL_LETTER_ASCII_FIRST_A && letterFromText <= SMALL_LETTER_ASCII_LAST_Z) {
-                int letterPosition = letterFromText - SMALL_LETTER_ASCII_FIRST_A;
-                letterPosition = (letterPosition - shift + ENGLISH_ALPHABET_CAPACITY) % ENGLISH_ALPHABET_CAPACITY;
-                if (shift < 0) {
-                    letterPosition = +ENGLISH_ALPHABET_CAPACITY;
-                }
-                textAsChar[i] = (char) (letterPosition + SMALL_LETTER_ASCII_FIRST_A);
-            } else if (letterFromText == SPACE_SYMBOL_ASCII) {
-                textAsChar[i] = (char) SPACE_SYMBOL_ASCII;
-            }
-        }
-        return String.valueOf(textAsChar);
+        shift = -shift + ENGLISH_ALPHABET_CAPACITY;
+        return caesarEncode(text, shift);
     }
 }

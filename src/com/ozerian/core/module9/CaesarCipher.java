@@ -1,4 +1,4 @@
-package com.ozerian.module9;
+package com.ozerian.core.module9;
 /*
  It used ASCII table. The value of constants represents appropriate
  char's value in ASCII table. From "65" to "90" - Capital english letters

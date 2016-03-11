@@ -1,4 +1,4 @@
-package com.ozerian.module1.firstprogram;
+package com.ozerian.core.module1.firstprogram;
 
 public class GoJavaOnlineFirstProgram {
   public static void main (String []args){

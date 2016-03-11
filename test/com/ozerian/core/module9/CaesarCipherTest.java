@@ -1,4 +1,4 @@
-package com.ozerian.module9;
+package com.ozerian.core.module9;
 
 import org.junit.Before;
 import org.junit.Test;

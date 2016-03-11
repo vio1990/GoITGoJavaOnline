@@ -1,6 +1,6 @@
-package com.ozerian.module9;
+package com.ozerian.core.module9;
 
-import com.ozerian.module3.bouquet.*;
+import com.ozerian.core.module3.bouquet.*;
 
 import java.util.ArrayList;
 

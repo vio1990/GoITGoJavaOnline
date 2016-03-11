@@ -1,19 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/com/ozerian/core/module6/bouquet/MainClass.java" line="23" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="51c1d720-7399-4080-9f76-fd65a97cba12" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ozerian/module10/MessageWriterReader.java" afterPath="$PROJECT_DIR$/src/com/ozerian/module10/MessageWriterReader.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module1/firstprogram/GoJavaOnlineFirstProgram.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module1/firstprogram/GoJavaOnlineFirstProgram.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module2/Module2Task1.jpg" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module2/Module2Task1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module2/Module2Task2.jpg" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module2/Module2Task2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module2/Module2Task3.jpg" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module2/Module2Task3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module9/CaesarCipher.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module9/CaesarCipher.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module9/Main.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module9/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/ozerian/module9/CaesarCipherTest.java" afterPath="$PROJECT_DIR$/test/com/ozerian/core/module9/CaesarCipherTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/directory/AudioFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/directory/File.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/directory/ImageFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/directory/TextFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module6/bouquet/Flower.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/directory/AudioFile.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/directory/File.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/directory/ImageFile.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/directory/TextFile.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ozerian/module6/bouquet/Flower.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ozerian/module7/Main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ozerian/module8/ListUtilities.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ozerian/module8/Main.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module10/Main.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module10/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/bouquet/Aster.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/bouquet/Aster.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/bouquet/Daisy.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/bouquet/Daisy.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/bouquet/Flower.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/bouquet/Flower.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/bouquet/FlowerBouquet.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/bouquet/FlowerBouquet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/bouquet/Rose.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/bouquet/Rose.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/bouquet/RoseBush.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/bouquet/RoseBush.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/bouquet/Tulip.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/bouquet/Tulip.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/directory/Directory.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/directory/Directory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/musicshop/Guitar.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/musicshop/Guitar.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/musicshop/MusicShop.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/musicshop/MusicShop.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/musicshop/MusicalInstrument.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/musicshop/MusicalInstrument.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/musicshop/Piano.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/musicshop/Piano.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module3/musicshop/Trumpet.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module3/musicshop/Trumpet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module4/calculation/area/AreaCalculation.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module4/calculation/area/AreaCalculation.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module4/calculation/area/GeometricFigure.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module4/calculation/area/GeometricFigure.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module4/calculation/distance/DistanceCalculation.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module4/calculation/distance/DistanceCalculation.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module4/calculation/distance/Point.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module4/calculation/distance/Point.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module4/calculation/temperature/TemperatureConverter.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module4/calculation/temperature/TemperatureConverter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module4/calculation/temperature/TemperatureValue.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module4/calculation/temperature/TemperatureValue.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module5/array_sorter_finder/Array.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module5/array_sorter_finder/Array.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module5/array_sorter_finder/Finder.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module5/array_sorter_finder/Finder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module5/array_sorter_finder/Main.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module5/array_sorter_finder/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module5/array_sorter_finder/Sorter.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module5/array_sorter_finder/Sorter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module6/bouquet/Aster.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module6/bouquet/Aster.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module6/bouquet/Daisy.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module6/bouquet/Daisy.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module6/bouquet/FlowerBouquet.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module6/bouquet/FlowerBouquet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module6/bouquet/MainClass.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module6/bouquet/MainClass.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module6/bouquet/Rose.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module6/bouquet/Rose.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module6/bouquet/RoseBush.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module6/bouquet/RoseBush.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module6/bouquet/Tulip.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module6/bouquet/Tulip.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module6/bouquet/ZeroQuantityFlowersException.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module6/bouquet/ZeroQuantityFlowersException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module7/crypticCodeAntiPattern/DistanceCalculation.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module7/crypticCodeAntiPattern/DistanceCalculation.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module7/crypticCodeAntiPattern/Point.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module7/crypticCodeAntiPattern/Point.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module7/magicNumberAntiPattern/TemperatureConverter.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module7/magicNumberAntiPattern/TemperatureConverter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module7/magicNumberAntiPattern/TemperatureValue.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module7/magicNumberAntiPattern/TemperatureValue.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module8/ListUtilities.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module8/ListUtilities.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ozerian/module8/Main.java" afterPath="$PROJECT_DIR$/src/com/ozerian/core/module8/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/ozerian/module10/MessageWriterReaderTest.java" afterPath="$PROJECT_DIR$/test/com/ozerian/core/module10/MessageWriterReaderTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/ozerian/module4/calculation/area/GeometricFigureTest.java" afterPath="$PROJECT_DIR$/test/com/ozerian/core/module4/calculation/area/GeometricFigureTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/ozerian/module4/calculation/distance/PointTest.java" afterPath="$PROJECT_DIR$/test/com/ozerian/core/module4/calculation/distance/PointTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/ozerian/module4/calculation/temperature/TemperatureValueTest.java" afterPath="$PROJECT_DIR$/test/com/ozerian/core/module4/calculation/temperature/TemperatureValueTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/ozerian/module5/array_sorter_finder/FinderTest.java" afterPath="$PROJECT_DIR$/test/com/ozerian/core/module5/array_sorter_finder/FinderTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/ozerian/module5/array_sorter_finder/SorterTest.java" afterPath="$PROJECT_DIR$/test/com/ozerian/core/module5/array_sorter_finder/SorterTest.java" />
     </list>
     <ignored path="GoITOzerianHomeworks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,6 +92,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="AudioFile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module3/directory/AudioFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Directory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module3/directory/Directory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CaesarCipher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module9/CaesarCipher.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,34 +123,30 @@
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module9/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module10/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageWriterReaderTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/ozerian/core/module10/MessageWriterReaderTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.08085612">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module10/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module9/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Array.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module5/array_sorter_finder/Array.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -96,36 +157,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageWriterReaderTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/ozerian/core/module10/MessageWriterReaderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Aster.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module3/bouquet/Aster.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module5/array_sorter_finder/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54937166">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -162,8 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/ozerian/module7/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/ozerian/module7/TemperatureValue.java" />
         <option value="$PROJECT_DIR$/src/com/ozerian/module7/magicNumberAntiPattern/TemperatureValue.java" />
         <option value="$PROJECT_DIR$/src/com/ozerian/module8/main.java" />
         <option value="$PROJECT_DIR$/src/com/ozerian/module3/bouquet/Daisy.java" />
@@ -208,11 +237,13 @@
         <option value="$PROJECT_DIR$/test/com/ozerian/module10/MessageWriterReaderTest.java" />
         <option value="$PROJECT_DIR$/src/com/ozerian/module10/MessageWriterReader.java" />
         <option value="$PROJECT_DIR$/src/com/ozerian/module10/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/ozerian/core/module10/Main.java" />
         <option value="$PROJECT_DIR$/src/com/ozerian/module5/array_sorter_finder/Array.java" />
         <option value="$PROJECT_DIR$/src/com/ozerian/core/GoJavaOnlineFirstProgram.java" />
         <option value="$PROJECT_DIR$/src/com/ozerian/module1/firstprogram/GoJavaOnlineFirstProgram.java" />
         <option value="$PROJECT_DIR$/src/com/ozerian/core/module1/firstprogram/GoJavaOnlineFirstProgram.java" />
+        <option value="$PROJECT_DIR$/src/com/ozerian/module7/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/ozerian/core/module10/Main.java" />
+        <option value="$PROJECT_DIR$/test/com/ozerian/core/module10/MessageWriterReaderTest.java" />
       </list>
     </option>
   </component>
@@ -269,7 +300,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -298,6 +331,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoITOzerianHomeworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoITjavaOnline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -308,8 +355,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -341,22 +386,22 @@
       <recent name="com.ozerian.module4.calculation.distance" />
       <recent name="com.ozerian.module4.calculation.area" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitProjectHomeworks\GoITOzerianHomeworks\test" />
+      <recent name="D:\GitProjectHomeworks\GoITOzerianHomeworks\src\com\ozerian\module10" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.ozerian" />
       <recent name="com.ozerian.core.module10" />
+      <recent name="com.ozerian.core" />
       <recent name="com.ozerian.core.module6" />
       <recent name="com.ozerian.core.module5" />
       <recent name="com.ozerian.core.module4" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitProjectHomeworks\GoITOzerianHomeworks\src\com\ozerian\module7" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GitProjectHomeworks\GoITOzerianHomeworks\test" />
-      <recent name="D:\GitProjectHomeworks\GoITOzerianHomeworks\src\com\ozerian\module10" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitProjectHomeworks\GoITOzerianHomeworks\src\com\ozerian\module7" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main (1)">
@@ -906,30 +951,30 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24880762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32603687" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24880762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32603687" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -991,6 +1036,48 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module10/MessageWriterReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1457710262924" expanded="true" signature="82:151" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module9/CaesarCipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module9/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module1/firstprogram/GoJavaOnlineFirstProgram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/ozerian/core/module9/CaesarCipherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/ozerian/core/module9/CaesarCipherTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1013,126 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module6/bouquet/Aster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module3/bouquet/Tulip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module3/bouquet/RoseBush.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module3/bouquet/Rose.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module3/bouquet/FlowerBouquet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module3/bouquet/Daisy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module3/musicshop/Guitar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module3/musicshop/MusicalInstrument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module7/magicNumberAntiPattern/TemperatureConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module7/magicNumberAntiPattern/TemperatureValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module6/bouquet/FlowerBouquet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module6/bouquet/MainClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module3/bouquet/Flower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="52" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module7/crypticCodeAntiPattern/DistanceCalculation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module7/crypticCodeAntiPattern/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module8/ListUtilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module8/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GoITOzerianHomeworks.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1144,69 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.13257575">
           <caret line="195" column="99" selection-start-line="195" selection-start-column="23" selection-end-line="195" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module4/calculation/area/AreaCalculation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module4/calculation/distance/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module4/calculation/distance/DistanceCalculation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="92" selection-start-line="8" selection-start-column="92" selection-end-line="8" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module4/calculation/area/GeometricFigure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/ozerian/core/module4/calculation/area/GeometricFigureTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="27" selection-start-line="88" selection-start-column="27" selection-end-line="88" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module4/calculation/temperature/TemperatureConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module4/calculation/temperature/TemperatureValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module5/array_sorter_finder/Finder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module5/array_sorter_finder/Sorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1231,20 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/ozerian/core/module4/calculation/temperature/TemperatureValueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/ozerian/core/module5/array_sorter_finder/FinderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.044270832">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/requests/ClassRequest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.57271093">
@@ -1252,28 +1142,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/ozerian/core/module5/array_sorter_finder/SorterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/ozerian/core/module4/calculation/distance/PointTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestFile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1281,53 +1153,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module9/CaesarCipher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module9/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module10/MessageWriterReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding>
-            <marker date="1457710262924" expanded="true" signature="82:151" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module10/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module5/array_sorter_finder/Array.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1347,26 +1172,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module3/directory/AudioFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module3/directory/Directory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module9/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module9/CaesarCipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module10/MessageWriterReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+          <folding>
+            <marker date="1457710262924" expanded="true" signature="82:151" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module10/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/ozerian/core/module10/MessageWriterReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module3/bouquet/Aster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ozerian/core/module5/array_sorter_finder/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54937166">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.08085612">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>

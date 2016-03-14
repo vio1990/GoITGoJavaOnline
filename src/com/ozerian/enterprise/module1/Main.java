@@ -7,22 +7,23 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
+        int testQuantity = 10;
+        int elementsQuantity = 100000;
+
         List<Integer> arrayList = new ArrayList<>();
         List<Integer> linkedList = new LinkedList<>();
 
-        int testQuantity = 100;
-        long result = 0;
-        for (int i = 0; i < testQuantity; i++) {
-            arrayList.clear();
-            long startTime = System.nanoTime();
-            for (int j = 0; j < 10000; j++) {
-                arrayList.add(j);
-            }
-            long endTime = System.nanoTime();
-            long duration = endTime - startTime;
-            result += duration;
-        }
-        result = result / testQuantity;
-        System.out.println(result);
+        long arrayListAddTime = ListTimeTesting.addTest(arrayList, testQuantity, elementsQuantity);
+        System.out.println("ArrayList add() time for " + elementsQuantity + " elements is - " + arrayListAddTime + " nanoseconds");
+
+        long arrayListGetTime = ListTimeTesting.getTest(arrayList, testQuantity, elementsQuantity);
+        System.out.println("ArrayList get() time for " + elementsQuantity + " elements is - " + arrayListGetTime + " nanoseconds");
+
+        long linkedListAddTime = ListTimeTesting.addTest(linkedList, testQuantity, elementsQuantity);
+        System.out.println("LinkedList add() time for " + elementsQuantity + " elements is - " + linkedListAddTime + " nanoseconds");
+
+        long linkedListGetTime = ListTimeTesting.getTest(linkedList, testQuantity, elementsQuantity);
+        System.out.println("LinkedList get() time for " + elementsQuantity + " elements is - " + linkedListGetTime + " nanoseconds");
+
     }
 }

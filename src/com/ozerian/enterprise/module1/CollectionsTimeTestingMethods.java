@@ -15,6 +15,12 @@ public class CollectionsTimeTestingMethods {
 
     private int elementsQuantity;
     private int testQuantity;
+    private long totalTime;
+    private long startTime;
+    private long endTime;
+    private long result;
+
+
 
     /**
      * Constructor creates an object fot testing collections' efficiency.
@@ -34,18 +40,18 @@ public class CollectionsTimeTestingMethods {
 
     public long populateTestForCollection(Collection<Integer> collection) {
 
-        long totalTime = 0;
+        totalTime = 0;
 
         for (int i = 0; i < testQuantity; i++) {
             collection.clear();
-            long startTime = System.nanoTime();
+            startTime = System.nanoTime();
 
             for (int j = 0; j < elementsQuantity; j++) {
                 collection.add(j);
             }
 
-            long endTime = System.nanoTime();
-            long result = endTime - startTime;
+            endTime = System.nanoTime();
+            result = endTime - startTime;
             totalTime += result;
         }
         return totalTime / testQuantity;
@@ -59,13 +65,13 @@ public class CollectionsTimeTestingMethods {
      */
     public long addIndexTestForList(List<Integer> list, int valueAndPosition) {
 
-        long totalTime = 0;
+        totalTime = 0;
 
         for (int i = 0; i < testQuantity; i++) {
-            long startTime = System.nanoTime();
+            startTime = System.nanoTime();
             list.add(valueAndPosition, valueAndPosition);
-            long endTime = System.nanoTime();
-            long result = endTime - startTime;
+            endTime = System.nanoTime();
+            result = endTime - startTime;
             totalTime += result;
         }
         return totalTime / testQuantity;
@@ -81,13 +87,13 @@ public class CollectionsTimeTestingMethods {
      */
     public long addTestForSet(Set<Integer> set) {
 
-        long totalTime = 0;
+        totalTime = 0;
 
         for (int i = 0; i < testQuantity; i++) {
-            long startTime = System.nanoTime();
+            startTime = System.nanoTime();
             set.add(elementsQuantity++);
-            long endTime = System.nanoTime();
-            long result = endTime - startTime;
+            endTime = System.nanoTime();
+            result = endTime - startTime;
             totalTime += result;
         }
         return totalTime / testQuantity;
@@ -101,13 +107,13 @@ public class CollectionsTimeTestingMethods {
      */
     public long removeTestForList(Collection<Integer> collection, int value) {
 
-        long totalTime = 0;
+        totalTime = 0;
 
         for (int i = 0; i < testQuantity; i++) {
-            long startTime = System.nanoTime();
+            startTime = System.nanoTime();
             collection.remove(value);
-            long endTime = System.nanoTime();
-            long result = endTime - startTime;
+            endTime = System.nanoTime();
+            result = endTime - startTime;
             totalTime += result;
         }
         return totalTime / testQuantity;
@@ -122,13 +128,13 @@ public class CollectionsTimeTestingMethods {
 
     public long getTestForList(List<Integer> list, int position) {
 
-        long totalTime = 0;
+        totalTime = 0;
 
         for (int i = 0; i < testQuantity; i++) {
-            long startTime = System.nanoTime();
+            startTime = System.nanoTime();
             list.get(position);
-            long endTime = System.nanoTime();
-            long result = endTime - startTime;
+            endTime = System.nanoTime();
+            result = endTime - startTime;
             totalTime += result;
         }
         return totalTime / testQuantity;
@@ -142,13 +148,13 @@ public class CollectionsTimeTestingMethods {
 
     public long removeTestForSet(Set<Integer> set) {
 
-        long totalTime = 0;
+        totalTime = 0;
 
         for (int i = 0; i < testQuantity; i++) {
-            long startTime = System.nanoTime();
+            startTime = System.nanoTime();
             set.remove(elementsQuantity++);
-            long endTime = System.nanoTime();
-            long result = endTime - startTime;
+            endTime = System.nanoTime();
+            result = endTime - startTime;
             totalTime += result;
         }
         return totalTime / testQuantity;
@@ -163,13 +169,13 @@ public class CollectionsTimeTestingMethods {
      */
     public long containsTestForCollection(Collection<Integer> collection, int value) {
 
-        long totalTime = 0;
+        totalTime = 0;
 
         for (int i = 0; i < testQuantity; i++) {
-            long startTime = System.nanoTime();
+            startTime = System.nanoTime();
             collection.contains(value);
-            long endTime = System.nanoTime();
-            long result = endTime - startTime;
+            endTime = System.nanoTime();
+            result = endTime - startTime;
             totalTime += result;
         }
         return totalTime / testQuantity;
@@ -185,13 +191,14 @@ public class CollectionsTimeTestingMethods {
     public long iteratorAddTestForList(List<Integer> list, int value) {
 
         ListIterator<Integer> iterator = list.listIterator(value);
-        long totalTime = 0;
+
+        totalTime = 0;
 
         for (int i = 0; i < testQuantity; i++) {
-            long startTime = System.nanoTime();
+            startTime = System.nanoTime();
             iterator.add(value);
-            long endTime = System.nanoTime();
-            long result = endTime - startTime;
+            endTime = System.nanoTime();
+            result = endTime - startTime;
             totalTime += result;
         }
         return totalTime / testQuantity;
@@ -207,14 +214,15 @@ public class CollectionsTimeTestingMethods {
     public long iteratorRemoveTestForList(List<Integer> list, int value) {
 
         ListIterator<Integer> iterator = list.listIterator(value);
-        long totalTime = 0;
+
+        totalTime = 0;
 
         for (int i = 0; i < testQuantity; i++) {
-            long startTime = System.nanoTime();
+            startTime = System.nanoTime();
             iterator.next();
             iterator.remove();
-            long endTime = System.nanoTime();
-            long result = endTime - startTime;
+            endTime = System.nanoTime();
+            result = endTime - startTime;
             totalTime += result;
         }
         return totalTime / testQuantity;

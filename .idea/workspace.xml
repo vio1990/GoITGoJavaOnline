@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51c1d720-7399-4080-9f76-fd65a97cba12" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/CollectionsTimeTestingMethods.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForBigAmountOfElements.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForMiddleAmountOfElements.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForSmallAmountOfElements.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/ListTimeTesting.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/Main.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GoITOzerianHomeworks.iws" />
@@ -926,7 +920,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457969942690</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Collections testing without Table">
+      <created>1458056471379</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1458056471379</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1026,7 +1026,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="Collections testing without Table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Collections testing without Table" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

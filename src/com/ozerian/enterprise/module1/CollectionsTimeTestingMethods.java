@@ -121,19 +121,31 @@ public class CollectionsTimeTestingMethods {
     public long iteratorAddTestForList(List<Integer> list, int value) {
 
         ListIterator<Integer> iterator = list.listIterator(value);
-        long startTime = System.nanoTime();
-        iterator.add(value);
-        long endTime = System.nanoTime();
-        return endTime - startTime;
+        long totalTime = 0;
+
+        for (int i = 0; i < testQuantity; i++) {
+            long startTime = System.nanoTime();
+            iterator.add(value);
+            long endTime = System.nanoTime();
+            long result = endTime - startTime;
+            totalTime += result;
+        }
+        return totalTime / testQuantity;
     }
 
     public long iteratorRemoveTestForList(List<Integer> list, int value) {
 
         ListIterator<Integer> iterator = list.listIterator(value);
-        long startTime = System.nanoTime();
-        iterator.next();
-        iterator.remove();
-        long endTime = System.nanoTime();
-        return endTime - startTime;
+        long totalTime = 0;
+
+        for (int i = 0; i < testQuantity; i++) {
+            long startTime = System.nanoTime();
+            iterator.next();
+            iterator.remove();
+            long endTime = System.nanoTime();
+            long result = endTime - startTime;
+            totalTime += result;
+        }
+        return totalTime / testQuantity;
     }
 }

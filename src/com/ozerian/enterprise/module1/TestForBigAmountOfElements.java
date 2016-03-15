@@ -7,41 +7,51 @@ public class TestForBigAmountOfElements {
         final int testQuantity = 100;
         final int bigAmountOfElements = 1000000;
 
+        // creating of the testing Collections' implementations.
         List<Integer> arrayList = new ArrayList<>();
         List<Integer> linkedList = new LinkedList<>();
         Set<Integer> hashSet = new HashSet<>();
         Set<Integer> treeSet = new TreeSet<>();
 
-        // test for 1000000 elements
-        CollectionsTimeTestingMethods firstTest = new CollectionsTimeTestingMethods(bigAmountOfElements, testQuantity);
+        /* creating an object CollectionsTimeTestingMethods class with
+         the amount of elements and amount of tests as constructor's parameters.
+         */
+        CollectionsTimeTestingMethods test = new CollectionsTimeTestingMethods(bigAmountOfElements, testQuantity);
 
-        //ArrayList
+        //ArrayList testing
 
-        long avaragePopulateArrayList = firstTest.populateTestForCollection(arrayList);
+        // populate testing.
+        long avaragePopulateArrayList = test.populateTestForCollection(arrayList);
 
-        long addToMiddleIndexArrayList = firstTest.addIndexTestForList(arrayList, bigAmountOfElements / 2);
-        long addToTopIndexArrayList = firstTest.addIndexTestForList(arrayList, 0);
-        long addToEndIndexArrayList = firstTest.addIndexTestForList(arrayList, bigAmountOfElements);
+        // add() testing in at three positions (top, middle and end).
+        long addToMiddleIndexArrayList = test.addIndexTestForList(arrayList, bigAmountOfElements / 2);
+        long addToTopIndexArrayList = test.addIndexTestForList(arrayList, 0);
+        long addToEndIndexArrayList = test.addIndexTestForList(arrayList, bigAmountOfElements);
 
-        long removeFromMiddleArrayList = firstTest.removeTestForList(arrayList, bigAmountOfElements / 2);
-        long removeFromTopArrayList = firstTest.removeTestForList(arrayList, 0);
-        long removeFromEndArrayList = firstTest.removeTestForList(arrayList, bigAmountOfElements);
+        // remove() testing in at three positions (top, middle and end).
+        long removeFromMiddleArrayList = test.removeTestForList(arrayList, bigAmountOfElements / 2);
+        long removeFromTopArrayList = test.removeTestForList(arrayList, 0);
+        long removeFromEndArrayList = test.removeTestForList(arrayList, bigAmountOfElements);
 
-        long getFromMiddleArrayList = firstTest.getTestForList(arrayList, bigAmountOfElements / 2);
-        long getFromTopArrayList = firstTest.getTestForList(arrayList, 0);
-        long getFromEndArrayList = firstTest.getTestForList(arrayList, bigAmountOfElements - 1);
+        // get() testing in at three positions (top, middle and end).
+        long getFromMiddleArrayList = test.getTestForList(arrayList, bigAmountOfElements / 2);
+        long getFromTopArrayList = test.getTestForList(arrayList, 0);
+        long getFromEndArrayList = test.getTestForList(arrayList, bigAmountOfElements - 1);
 
-        long containsMiddleValueArrayList = firstTest.containsTestForCollection(arrayList, bigAmountOfElements / 2);
-        long containsFirstValueArrayList = firstTest.containsTestForCollection(arrayList, 0);
-        long containsEndValueArrayList = firstTest.getTestForList(arrayList, bigAmountOfElements - 1);
+        // contains() testing in at three positions (top, middle and end).
+        long containsMiddleValueArrayList = test.containsTestForCollection(arrayList, bigAmountOfElements / 2);
+        long containsFirstValueArrayList = test.containsTestForCollection(arrayList, 0);
+        long containsEndValueArrayList = test.getTestForList(arrayList, bigAmountOfElements - 1);
 
-        long iteratorAddToMiddleArrayList = firstTest.iteratorAddTestForList(arrayList, bigAmountOfElements / 2);
-        long iteratorAddToTopArrayList = firstTest.iteratorAddTestForList(arrayList, 0);
-        long iteratorAddToEndArrayList = firstTest.iteratorAddTestForList(arrayList, bigAmountOfElements);
+        // iterator.add() testing in at three positions (top, middle and end).
+        long iteratorAddToMiddleArrayList = test.iteratorAddTestForList(arrayList, bigAmountOfElements / 2);
+        long iteratorAddToTopArrayList = test.iteratorAddTestForList(arrayList, 0);
+        long iteratorAddToEndArrayList = test.iteratorAddTestForList(arrayList, bigAmountOfElements);
 
-        long iteratorRemoveFromMiddleArrayList = firstTest.iteratorRemoveTestForList(arrayList, bigAmountOfElements / 2);
-        long iteratorRemoveFromTopArrayList = firstTest.iteratorRemoveTestForList(arrayList, 0);
-        long iteratorRemoveFromEndArrayList = firstTest.iteratorRemoveTestForList(arrayList, bigAmountOfElements);
+        // iterator.remove() testing in at three positions (top, middle and end).
+        long iteratorRemoveFromMiddleArrayList = test.iteratorRemoveTestForList(arrayList, bigAmountOfElements / 2);
+        long iteratorRemoveFromTopArrayList = test.iteratorRemoveTestForList(arrayList, 0);
+        long iteratorRemoveFromEndArrayList = test.iteratorRemoveTestForList(arrayList, bigAmountOfElements);
 
         // print results of the testing
         System.out.println("ArrayList methods efficiency for " + bigAmountOfElements + " elements (in nanoseconds):");
@@ -56,31 +66,38 @@ public class TestForBigAmountOfElements {
 
         //LinkedList
 
-        long avaragePopulateLinkedList = firstTest.populateTestForCollection(linkedList);
+        // populate testing.
+        long avaragePopulateLinkedList = test.populateTestForCollection(linkedList);
 
-        long addToMiddleIndexLinkedList = firstTest.addIndexTestForList(linkedList, bigAmountOfElements / 2);
-        long addToTopIndexLinkedList = firstTest.addIndexTestForList(linkedList, 0);
-        long addToEndIndexLinkedList = firstTest.addIndexTestForList(linkedList, bigAmountOfElements);
+        // add() testing in at three positions (top, middle and end).
+        long addToMiddleIndexLinkedList = test.addIndexTestForList(linkedList, bigAmountOfElements / 2);
+        long addToTopIndexLinkedList = test.addIndexTestForList(linkedList, 0);
+        long addToEndIndexLinkedList = test.addIndexTestForList(linkedList, bigAmountOfElements);
 
-        long removeFromMiddleLinkedList = firstTest.removeTestForList(linkedList, bigAmountOfElements / 2);
-        long removeFromTopLinkedList = firstTest.removeTestForList(linkedList, 0);
-        long removeFromEndLinkedList = firstTest.removeTestForList(linkedList, bigAmountOfElements);
+        // remove() testing in at three positions (top, middle and end).
+        long removeFromMiddleLinkedList = test.removeTestForList(linkedList, bigAmountOfElements / 2);
+        long removeFromTopLinkedList = test.removeTestForList(linkedList, 0);
+        long removeFromEndLinkedList = test.removeTestForList(linkedList, bigAmountOfElements);
 
-        long getFromMiddleLinkedList = firstTest.getTestForList(linkedList, bigAmountOfElements / 2);
-        long getFromTopLinkedList = firstTest.getTestForList(linkedList, 0);
-        long getFromEndLinkedList = firstTest.getTestForList(linkedList, bigAmountOfElements - 1);
+        // get() testing in at three positions (top, middle and end).
+        long getFromMiddleLinkedList = test.getTestForList(linkedList, bigAmountOfElements / 2);
+        long getFromTopLinkedList = test.getTestForList(linkedList, 0);
+        long getFromEndLinkedList = test.getTestForList(linkedList, bigAmountOfElements - 1);
 
-        long containsMiddleValueLinkedList = firstTest.containsTestForCollection(linkedList, bigAmountOfElements / 2);
-        long containsFirstValueLinkedList = firstTest.containsTestForCollection(linkedList, 0);
-        long containsEndValueLinkedList = firstTest.getTestForList(linkedList, bigAmountOfElements - 1);
+        // contains() testing in at three positions (top, middle and end).
+        long containsMiddleValueLinkedList = test.containsTestForCollection(linkedList, bigAmountOfElements / 2);
+        long containsFirstValueLinkedList = test.containsTestForCollection(linkedList, 0);
+        long containsEndValueLinkedList = test.getTestForList(linkedList, bigAmountOfElements - 1);
 
-        long iteratorAddToMiddleLinkedList = firstTest.iteratorAddTestForList(linkedList, bigAmountOfElements / 2);
-        long iteratorAddToTopLinkedList = firstTest.iteratorAddTestForList(linkedList, 0);
-        long iteratorAddToEndLinkedList = firstTest.iteratorAddTestForList(linkedList, bigAmountOfElements);
+        // iterator.add() testing in at three positions (top, middle and end).
+        long iteratorAddToMiddleLinkedList = test.iteratorAddTestForList(linkedList, bigAmountOfElements / 2);
+        long iteratorAddToTopLinkedList = test.iteratorAddTestForList(linkedList, 0);
+        long iteratorAddToEndLinkedList = test.iteratorAddTestForList(linkedList, bigAmountOfElements);
 
-        long iteratorRemoveFromMiddleLinkedList = firstTest.iteratorRemoveTestForList(linkedList, bigAmountOfElements / 2);
-        long iteratorRemoveFromTopLinkedList = firstTest.iteratorRemoveTestForList(linkedList, 0);
-        long iteratorRemoveFromEndLinkedList = firstTest.iteratorRemoveTestForList(linkedList, bigAmountOfElements);
+        // iterator.remove() testing in at three positions (top, middle and end).
+        long iteratorRemoveFromMiddleLinkedList = test.iteratorRemoveTestForList(linkedList, bigAmountOfElements / 2);
+        long iteratorRemoveFromTopLinkedList = test.iteratorRemoveTestForList(linkedList, 0);
+        long iteratorRemoveFromEndLinkedList = test.iteratorRemoveTestForList(linkedList, bigAmountOfElements);
 
         // print results of the testing
         System.out.println("LinkedList methods efficiency for " + bigAmountOfElements + " elements (in nanoseconds):");
@@ -95,13 +112,17 @@ public class TestForBigAmountOfElements {
 
         //HashSet
 
-        long avaragePopulateHashSet = firstTest.populateTestForCollection(hashSet);
+        // populate testing.
+        long avaragePopulateHashSet = test.populateTestForCollection(hashSet);
 
-        long addValueHashSet = firstTest.addTestForSet(hashSet);
+        // add() testing.
+        long addValueHashSet = test.addTestForSet(hashSet);
 
-        long removeValueHashSet = firstTest.removeTestForSet(hashSet);
+        // remove() testing.
+        long removeValueHashSet = test.removeTestForSet(hashSet);
 
-        long containsValueHashSet = firstTest.containsTestForCollection(hashSet, bigAmountOfElements);
+        // contains() testing.
+        long containsValueHashSet = test.containsTestForCollection(hashSet, bigAmountOfElements);
 
         // print results of the testing
         System.out.println("HashSet methods efficiency for " + bigAmountOfElements + " elements (in nanoseconds):");
@@ -113,13 +134,17 @@ public class TestForBigAmountOfElements {
 
         //TreeSet
 
-        long avaragePopulateTreeSet = firstTest.populateTestForCollection(treeSet);
+        // populate testing.
+        long avaragePopulateTreeSet = test.populateTestForCollection(treeSet);
 
-        long addValueTreeSet = firstTest.addTestForSet(treeSet);
+        // add() testing.
+        long addValueTreeSet = test.addTestForSet(treeSet);
 
-        long removeValueTreeSet = firstTest.removeTestForSet(treeSet);
+        // remove() testing.
+        long removeValueTreeSet = test.removeTestForSet(treeSet);
 
-        long containsValueTreeSet = firstTest.containsTestForCollection(treeSet, bigAmountOfElements);
+        // contains() testing.
+        long containsValueTreeSet = test.containsTestForCollection(treeSet, bigAmountOfElements);
 
         // print results of the testing
         System.out.println("TreeSet methods efficiency for " + bigAmountOfElements + " elements (in nanoseconds):");

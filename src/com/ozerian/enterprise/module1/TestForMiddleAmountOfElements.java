@@ -1,47 +1,62 @@
 package com.ozerian.enterprise.module1;
 
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.HashSet;
 
 public class TestForMiddleAmountOfElements {
     public static void main(String[] args) {
         final int testQuantity = 100;
         final int middleAmountOfElements = 100000;
 
+        // creating of the testing Collections' implementations.
         List<Integer> arrayList = new ArrayList<>();
         List<Integer> linkedList = new LinkedList<>();
         Set<Integer> hashSet = new HashSet<>();
         Set<Integer> treeSet = new TreeSet<>();
 
-        // test for 100000 elements
-        CollectionsTimeTestingMethods firstTest = new CollectionsTimeTestingMethods(middleAmountOfElements, testQuantity);
+        /* creating an object CollectionsTimeTestingMethods class with
+         the amount of elements and amount of tests as constructor's parameters.
+         */
+        CollectionsTimeTestingMethods test = new CollectionsTimeTestingMethods(middleAmountOfElements, testQuantity);
 
-        //ArrayList
+        //ArrayList testing
 
-        long avaragePopulateArrayList = firstTest.populateTestForCollection(arrayList);
+        // populate testing.
+        long avaragePopulateArrayList = test.populateTestForCollection(arrayList);
 
-        long addToMiddleIndexArrayList = firstTest.addIndexTestForList(arrayList, middleAmountOfElements / 2);
-        long addToTopIndexArrayList = firstTest.addIndexTestForList(arrayList, 0);
-        long addToEndIndexArrayList = firstTest.addIndexTestForList(arrayList, middleAmountOfElements);
+        // add() testing in at three positions (top, middle and end).
+        long addToMiddleIndexArrayList = test.addIndexTestForList(arrayList, middleAmountOfElements / 2);
+        long addToTopIndexArrayList = test.addIndexTestForList(arrayList, 0);
+        long addToEndIndexArrayList = test.addIndexTestForList(arrayList, middleAmountOfElements);
 
-        long removeFromMiddleArrayList = firstTest.removeTestForList(arrayList, middleAmountOfElements / 2);
-        long removeFromTopArrayList = firstTest.removeTestForList(arrayList, 0);
-        long removeFromEndArrayList = firstTest.removeTestForList(arrayList, middleAmountOfElements);
+        // remove() testing in at three positions (top, middle and end).
+        long removeFromMiddleArrayList = test.removeTestForList(arrayList, middleAmountOfElements / 2);
+        long removeFromTopArrayList = test.removeTestForList(arrayList, 0);
+        long removeFromEndArrayList = test.removeTestForList(arrayList, middleAmountOfElements);
 
-        long getFromMiddleArrayList = firstTest.getTestForList(arrayList, middleAmountOfElements / 2);
-        long getFromTopArrayList = firstTest.getTestForList(arrayList, 0);
-        long getFromEndArrayList = firstTest.getTestForList(arrayList, middleAmountOfElements - 1);
+        // get() testing in at three positions (top, middle and end).
+        long getFromMiddleArrayList = test.getTestForList(arrayList, middleAmountOfElements / 2);
+        long getFromTopArrayList = test.getTestForList(arrayList, 0);
+        long getFromEndArrayList = test.getTestForList(arrayList, middleAmountOfElements - 1);
 
-        long containsMiddleValueArrayList = firstTest.containsTestForCollection(arrayList, middleAmountOfElements / 2);
-        long containsFirstValueArrayList = firstTest.containsTestForCollection(arrayList, 0);
-        long containsEndValueArrayList = firstTest.getTestForList(arrayList, middleAmountOfElements - 1);
+        // contains() testing in at three positions (top, middle and end).
+        long containsMiddleValueArrayList = test.containsTestForCollection(arrayList, middleAmountOfElements / 2);
+        long containsFirstValueArrayList = test.containsTestForCollection(arrayList, 0);
+        long containsEndValueArrayList = test.getTestForList(arrayList, middleAmountOfElements - 1);
 
-        long iteratorAddToMiddleArrayList = firstTest.iteratorAddTestForList(arrayList, middleAmountOfElements / 2);
-        long iteratorAddToTopArrayList = firstTest.iteratorAddTestForList(arrayList, 0);
-        long iteratorAddToEndArrayList = firstTest.iteratorAddTestForList(arrayList, middleAmountOfElements);
+        // iterator.add() testing in at three positions (top, middle and end).
+        long iteratorAddToMiddleArrayList = test.iteratorAddTestForList(arrayList, middleAmountOfElements / 2);
+        long iteratorAddToTopArrayList = test.iteratorAddTestForList(arrayList, 0);
+        long iteratorAddToEndArrayList = test.iteratorAddTestForList(arrayList, middleAmountOfElements);
 
-        long iteratorRemoveFromMiddleArrayList = firstTest.iteratorRemoveTestForList(arrayList, middleAmountOfElements / 2);
-        long iteratorRemoveFromTopArrayList = firstTest.iteratorRemoveTestForList(arrayList, 0);
-        long iteratorRemoveFromEndArrayList = firstTest.iteratorRemoveTestForList(arrayList, middleAmountOfElements);
+        // iterator.remove() testing in at three positions (top, middle and end).
+        long iteratorRemoveFromMiddleArrayList = test.iteratorRemoveTestForList(arrayList, middleAmountOfElements / 2);
+        long iteratorRemoveFromTopArrayList = test.iteratorRemoveTestForList(arrayList, 0);
+        long iteratorRemoveFromEndArrayList = test.iteratorRemoveTestForList(arrayList, middleAmountOfElements);
 
         // print results of the testing
         System.out.println("ArrayList methods efficiency for " + middleAmountOfElements + " elements (in nanoseconds):");
@@ -56,31 +71,38 @@ public class TestForMiddleAmountOfElements {
 
         //LinkedList
 
-        long avaragePopulateLinkedList = firstTest.populateTestForCollection(linkedList);
+        // populate testing.
+        long avaragePopulateLinkedList = test.populateTestForCollection(linkedList);
 
-        long addToMiddleIndexLinkedList = firstTest.addIndexTestForList(linkedList, middleAmountOfElements / 2);
-        long addToTopIndexLinkedList = firstTest.addIndexTestForList(linkedList, 0);
-        long addToEndIndexLinkedList = firstTest.addIndexTestForList(linkedList, middleAmountOfElements);
+        // add() testing in at three positions (top, middle and end).
+        long addToMiddleIndexLinkedList = test.addIndexTestForList(linkedList, middleAmountOfElements / 2);
+        long addToTopIndexLinkedList = test.addIndexTestForList(linkedList, 0);
+        long addToEndIndexLinkedList = test.addIndexTestForList(linkedList, middleAmountOfElements);
 
-        long removeFromMiddleLinkedList = firstTest.removeTestForList(linkedList, middleAmountOfElements / 2);
-        long removeFromTopLinkedList = firstTest.removeTestForList(linkedList, 0);
-        long removeFromEndLinkedList = firstTest.removeTestForList(linkedList, middleAmountOfElements);
+        // remove() testing in at three positions (top, middle and end).
+        long removeFromMiddleLinkedList = test.removeTestForList(linkedList, middleAmountOfElements / 2);
+        long removeFromTopLinkedList = test.removeTestForList(linkedList, 0);
+        long removeFromEndLinkedList = test.removeTestForList(linkedList, middleAmountOfElements);
 
-        long getFromMiddleLinkedList = firstTest.getTestForList(linkedList, middleAmountOfElements / 2);
-        long getFromTopLinkedList = firstTest.getTestForList(linkedList, 0);
-        long getFromEndLinkedList = firstTest.getTestForList(linkedList, middleAmountOfElements - 1);
+        // get() testing in at three positions (top, middle and end).
+        long getFromMiddleLinkedList = test.getTestForList(linkedList, middleAmountOfElements / 2);
+        long getFromTopLinkedList = test.getTestForList(linkedList, 0);
+        long getFromEndLinkedList = test.getTestForList(linkedList, middleAmountOfElements - 1);
 
-        long containsMiddleValueLinkedList = firstTest.containsTestForCollection(linkedList, middleAmountOfElements / 2);
-        long containsFirstValueLinkedList = firstTest.containsTestForCollection(linkedList, 0);
-        long containsEndValueLinkedList = firstTest.getTestForList(linkedList, middleAmountOfElements - 1);
+        // contains() testing in at three positions (top, middle and end).
+        long containsMiddleValueLinkedList = test.containsTestForCollection(linkedList, middleAmountOfElements / 2);
+        long containsFirstValueLinkedList = test.containsTestForCollection(linkedList, 0);
+        long containsEndValueLinkedList = test.getTestForList(linkedList, middleAmountOfElements - 1);
 
-        long iteratorAddToMiddleLinkedList = firstTest.iteratorAddTestForList(linkedList, middleAmountOfElements / 2);
-        long iteratorAddToTopLinkedList = firstTest.iteratorAddTestForList(linkedList, 0);
-        long iteratorAddToEndLinkedList = firstTest.iteratorAddTestForList(linkedList, middleAmountOfElements);
+        // iterator.add() testing in at three positions (top, middle and end).
+        long iteratorAddToMiddleLinkedList = test.iteratorAddTestForList(linkedList, middleAmountOfElements / 2);
+        long iteratorAddToTopLinkedList = test.iteratorAddTestForList(linkedList, 0);
+        long iteratorAddToEndLinkedList = test.iteratorAddTestForList(linkedList, middleAmountOfElements);
 
-        long iteratorRemoveFromMiddleLinkedList = firstTest.iteratorRemoveTestForList(linkedList, middleAmountOfElements / 2);
-        long iteratorRemoveFromTopLinkedList = firstTest.iteratorRemoveTestForList(linkedList, 0);
-        long iteratorRemoveFromEndLinkedList = firstTest.iteratorRemoveTestForList(linkedList, middleAmountOfElements);
+        // iterator.remove() testing in at three positions (top, middle and end).
+        long iteratorRemoveFromMiddleLinkedList = test.iteratorRemoveTestForList(linkedList, middleAmountOfElements / 2);
+        long iteratorRemoveFromTopLinkedList = test.iteratorRemoveTestForList(linkedList, 0);
+        long iteratorRemoveFromEndLinkedList = test.iteratorRemoveTestForList(linkedList, middleAmountOfElements);
 
         // print results of the testing
         System.out.println("LinkedList methods efficiency for " + middleAmountOfElements + " elements (in nanoseconds):");
@@ -95,13 +117,17 @@ public class TestForMiddleAmountOfElements {
 
         //HashSet
 
-        long avaragePopulateHashSet = firstTest.populateTestForCollection(hashSet);
+        // populate testing.
+        long avaragePopulateHashSet = test.populateTestForCollection(hashSet);
 
-        long addValueHashSet = firstTest.addTestForSet(hashSet);
+        // add() testing.
+        long addValueHashSet = test.addTestForSet(hashSet);
 
-        long removeValueHashSet = firstTest.removeTestForSet(hashSet);
+        // remove() testing.
+        long removeValueHashSet = test.removeTestForSet(hashSet);
 
-        long containsValueHashSet = firstTest.containsTestForCollection(hashSet, middleAmountOfElements);
+        // contains() testing.
+        long containsValueHashSet = test.containsTestForCollection(hashSet, middleAmountOfElements);
 
         // print results of the testing
         System.out.println("HashSet methods efficiency for " + middleAmountOfElements + " elements (in nanoseconds):");
@@ -113,13 +139,17 @@ public class TestForMiddleAmountOfElements {
 
         //TreeSet
 
-        long avaragePopulateTreeSet = firstTest.populateTestForCollection(treeSet);
+        // populate testing.
+        long avaragePopulateTreeSet = test.populateTestForCollection(treeSet);
 
-        long addValueTreeSet = firstTest.addTestForSet(treeSet);
+        // add() testing.
+        long addValueTreeSet = test.addTestForSet(treeSet);
 
-        long removeValueTreeSet = firstTest.removeTestForSet(treeSet);
+        // remove() testing.
+        long removeValueTreeSet = test.removeTestForSet(treeSet);
 
-        long containsValueTreeSet = firstTest.containsTestForCollection(treeSet, middleAmountOfElements);
+        // contains() testing.
+        long containsValueTreeSet = test.containsTestForCollection(treeSet, middleAmountOfElements);
 
         // print results of the testing
         System.out.println("TreeSet methods efficiency for " + middleAmountOfElements + " elements (in nanoseconds):");

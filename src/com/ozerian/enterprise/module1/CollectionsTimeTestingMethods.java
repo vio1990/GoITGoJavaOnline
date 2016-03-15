@@ -5,15 +5,32 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.Set;
 
+/**
+ * This class contains methods, which indicate average time for
+ * processing different methods of ArrayList, LinkedList, HashSet,
+ * TreeSet in order to compare this time's values.
+ */
+
 public class CollectionsTimeTestingMethods {
 
     private int elementsQuantity;
     private int testQuantity;
 
+    /**
+     * Constructor creates an object fot testing collections' efficiency.
+     * @param elementsQuantity an amount of elements quantity, which are being added in collection.
+     * @param testQuantity an amount of tests' quantity (for more accurate time result).
+     */
     public CollectionsTimeTestingMethods(int elementsQuantity, int testQuantity) {
         this.elementsQuantity = elementsQuantity;
         this.testQuantity = testQuantity;
     }
+
+    /**
+     * Testing of collections' populate. Used for Lists and Sets.
+     * @param collection list or set which are being tested.
+     * @return the average time implemented operations for appropriate quantity of the tests.
+     */
 
     public long populateTestForCollection(Collection<Integer> collection) {
 
@@ -34,13 +51,19 @@ public class CollectionsTimeTestingMethods {
         return totalTime / testQuantity;
     }
 
-    public long addIndexTestForList(List<Integer> list, int position) {
+    /**
+     * Testing of implementation add(index) method. Used only for Lists.
+     * @param list list which are being tested.
+     * @param valueAndPosition added value and its position in the collection.
+     * @return the average time implemented operations for appropriate quantity of the tests.
+     */
+    public long addIndexTestForList(List<Integer> list, int valueAndPosition) {
 
         long totalTime = 0;
 
         for (int i = 0; i < testQuantity; i++) {
             long startTime = System.nanoTime();
-            list.add(position, position);
+            list.add(valueAndPosition, valueAndPosition);
             long endTime = System.nanoTime();
             long result = endTime - startTime;
             totalTime += result;
@@ -48,6 +71,14 @@ public class CollectionsTimeTestingMethods {
         return totalTime / testQuantity;
     }
 
+    /**
+     * Testing of implementation add(value) method. Used only for Sets.
+     * it used elementsQuantity++ as an added value after each loop's iteration.
+     * This is done in order to prevent duplicate values in Set. Because
+     * the Set would already have values from '0' to "elementsQuantity".
+     * @param set set which are being tested.
+     * @return the average time implemented operations for appropriate quantity of the tests.
+     */
     public long addTestForSet(Set<Integer> set) {
 
         long totalTime = 0;
@@ -62,19 +93,32 @@ public class CollectionsTimeTestingMethods {
         return totalTime / testQuantity;
     }
 
-    public long removeTestForList(Collection<Integer> collection, int position) {
+    /**
+     * Testing of implementation remove(value) method. Used for Sets and Lists.
+     * @param collection list or set which are being tested.
+     * @param value removed value from the collection.
+     * @return the average time implemented operations for appropriate quantity of the tests.
+     */
+    public long removeTestForList(Collection<Integer> collection, int value) {
 
         long totalTime = 0;
 
         for (int i = 0; i < testQuantity; i++) {
             long startTime = System.nanoTime();
-            collection.remove(position);
+            collection.remove(value);
             long endTime = System.nanoTime();
             long result = endTime - startTime;
             totalTime += result;
         }
         return totalTime / testQuantity;
     }
+
+    /**
+     * Testing of implementation get(index) method. Used only for Lists.
+     * @param list list which are being tested.
+     * @param position value's position in the collection.
+     * @return the average time implemented operations for appropriate quantity of the tests.
+     */
 
     public long getTestForList(List<Integer> list, int position) {
 
@@ -90,6 +134,12 @@ public class CollectionsTimeTestingMethods {
         return totalTime / testQuantity;
     }
 
+    /**
+     * Testing of implementation remove(value) method. Used for Sets.
+     * @param set set which are being tested.
+     * @return the average time implemented operations for appropriate quantity of the tests.
+     */
+
     public long removeTestForSet(Set<Integer> set) {
 
         long totalTime = 0;
@@ -104,6 +154,13 @@ public class CollectionsTimeTestingMethods {
         return totalTime / testQuantity;
     }
 
+    /**
+     * Testing of implementation contains(value) method. Used for Lists and Sets.
+     * Checking if collection has an input value.
+     * @param collection list or set which are being tested.
+     * @param value checking value.
+     * @return the average time implemented operations for appropriate quantity of the tests.
+     */
     public long containsTestForCollection(Collection<Integer> collection, int value) {
 
         long totalTime = 0;
@@ -118,6 +175,13 @@ public class CollectionsTimeTestingMethods {
         return totalTime / testQuantity;
     }
 
+    /**
+     * Testing of implementation add(value) method by means of iterator. Used only for Lists.
+     * It created a ListIterator with start position as a constructor's parameter.
+     * @param list ist which are being tested.
+     * @param value added value to the collection.
+     * @return the average time implemented operations for appropriate quantity of the tests.
+     */
     public long iteratorAddTestForList(List<Integer> list, int value) {
 
         ListIterator<Integer> iterator = list.listIterator(value);
@@ -133,6 +197,13 @@ public class CollectionsTimeTestingMethods {
         return totalTime / testQuantity;
     }
 
+    /**
+     * Testing of implementation remove(value) method by means of iterator. Used only for Lists.
+     * It created a ListIterator with start position as a constructor's parameter.
+     * @param list ist which are being tested.
+     * @param value removed value from the collection.
+     * @return the average time implemented operations for appropriate quantity of the tests.
+     */
     public long iteratorRemoveTestForList(List<Integer> list, int value) {
 
         ListIterator<Integer> iterator = list.listIterator(value);

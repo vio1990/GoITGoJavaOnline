@@ -4,6 +4,9 @@
     <list default="true" id="51c1d720-7399-4080-9f76-fd65a97cba12" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/CollectionsTimeTestingMethods.java" afterPath="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/CollectionsTimeTestingMethods.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForBigAmountOfElements.java" afterPath="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForBigAmountOfElements.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForMiddleAmountOfElements.java" afterPath="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForMiddleAmountOfElements.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForSmallAmountOfElements.java" afterPath="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForSmallAmountOfElements.java" />
     </list>
     <ignored path="GoITOzerianHomeworks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,8 +78,10 @@
         <entry file="file://$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForSmallAmountOfElements.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.42424244">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
+              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,8 +90,10 @@
         <entry file="file://$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForMiddleAmountOfElements.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-              <folding />
+              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForBigAmountOfElements.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -105,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/ozerian/enterprise/module1/CollectionsTimeTestingMethods.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="130" column="32" selection-start-line="130" selection-start-column="32" selection-end-line="130" selection-end-column="32" />
+              <caret line="204" column="46" selection-start-line="204" selection-start-column="46" selection-end-line="204" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -204,10 +211,10 @@
         <option value="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForMiddleAmountsOfElements.java" />
         <option value="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForSmallAmountsOfElements.java" />
         <option value="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/CollectionsTimeTesting.java" />
+        <option value="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/CollectionsTimeTestingMethods.java" />
         <option value="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForBigAmountOfElements.java" />
         <option value="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForMiddleAmountOfElements.java" />
         <option value="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForSmallAmountOfElements.java" />
-        <option value="$PROJECT_DIR$/src/com/ozerian/enterprise/module1/CollectionsTimeTestingMethods.java" />
       </list>
     </option>
   </component>
@@ -777,8 +784,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.TestForSmallAmountOfElements" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestForBigAmountOfElements" />
-        <item index="2" class="java.lang.String" itemvalue="Application.TestForMiddleAmountOfElements" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestForMiddleAmountOfElements" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TestForBigAmountOfElements" />
         <item index="3" class="java.lang.String" itemvalue="Application.Main (1)" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.MessageWriterReaderTest" />
       </list>
@@ -933,7 +940,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458056480339</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Collections testing without Table">
+      <created>1458056882541</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1458056882541</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -976,10 +989,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3248848" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32142857" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32142857" sideWeight="0.50317967" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328341" sideWeight="0.49682036" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32142857" sideWeight="0.49682036" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.49682036" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24801272" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1096,7 +1109,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1442,7 +1457,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/ozerian/enterprise/module1/CollectionsTimeTestingMethods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="130" column="32" selection-start-line="130" selection-start-column="32" selection-end-line="130" selection-end-column="32" />
+          <caret line="204" column="46" selection-start-line="204" selection-start-column="46" selection-end-line="204" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1452,7 +1467,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForBigAmountOfElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1460,16 +1475,20 @@
     <entry file="file://$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForMiddleAmountOfElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-          <folding />
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ozerian/enterprise/module1/TestForSmallAmountOfElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42424244">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,5 +1,6 @@
 package com.ozerian.enterprise.module1;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -58,16 +59,6 @@ public class TestForMiddleAmountOfElements {
         long iteratorRemoveFromTopArrayList = test.iteratorRemoveTestForList(arrayList, 0);
         long iteratorRemoveFromEndArrayList = test.iteratorRemoveTestForList(arrayList, middleAmountOfElements);
 
-        // print results of the testing
-        System.out.println("ArrayList methods efficiency for " + middleAmountOfElements + " elements (in nanoseconds):");
-        System.out.println("populate: " + avaragePopulateArrayList + " nanoseconds");
-        System.out.println("add(): top:" + addToTopIndexArrayList + " middle: " + addToMiddleIndexArrayList + " end: " + addToEndIndexArrayList);
-        System.out.println("remove(): top: " + removeFromTopArrayList + " middle: " + removeFromMiddleArrayList + " end: " + removeFromEndArrayList);
-        System.out.println("get(): top: " + getFromTopArrayList + " middle: " + getFromMiddleArrayList + " end: " + getFromEndArrayList);
-        System.out.println("contains(): top: " + containsFirstValueArrayList + " middle: " + containsMiddleValueArrayList + " end: " + containsEndValueArrayList);
-        System.out.println("iterator.add(): top: " + iteratorAddToTopArrayList + " middle: " + iteratorAddToMiddleArrayList + " end: " + iteratorAddToEndArrayList);
-        System.out.println("iterator.remove(): top: " + iteratorRemoveFromTopArrayList + " middle: " + iteratorRemoveFromMiddleArrayList + " end: " + iteratorRemoveFromEndArrayList);
-        System.out.println();
 
         //LinkedList
 
@@ -104,16 +95,6 @@ public class TestForMiddleAmountOfElements {
         long iteratorRemoveFromTopLinkedList = test.iteratorRemoveTestForList(linkedList, 0);
         long iteratorRemoveFromEndLinkedList = test.iteratorRemoveTestForList(linkedList, middleAmountOfElements);
 
-        // print results of the testing
-        System.out.println("LinkedList methods efficiency for " + middleAmountOfElements + " elements (in nanoseconds):");
-        System.out.println("populate: " + avaragePopulateLinkedList + " nanoseconds");
-        System.out.println("add(): top:" + addToTopIndexLinkedList + " middle: " + addToMiddleIndexLinkedList + " end: " + addToEndIndexLinkedList);
-        System.out.println("remove(): top: " + removeFromTopLinkedList + " middle: " + removeFromMiddleLinkedList + " end: " + removeFromEndLinkedList);
-        System.out.println("get(): top: " + getFromTopLinkedList + " middle: " + getFromMiddleLinkedList + " end: " + getFromEndLinkedList);
-        System.out.println("contains(): top: " + containsFirstValueLinkedList + " middle: " + containsMiddleValueLinkedList + " end: " + containsEndValueLinkedList);
-        System.out.println("iterator.add(): top: " + iteratorAddToTopLinkedList + " middle: " + iteratorAddToMiddleLinkedList + " end: " + iteratorAddToEndLinkedList);
-        System.out.println("iterator.remove(): top: " + iteratorRemoveFromTopLinkedList + " middle: " + iteratorRemoveFromMiddleLinkedList + " end: " + iteratorRemoveFromEndLinkedList);
-        System.out.println();
 
         //HashSet
 
@@ -129,14 +110,6 @@ public class TestForMiddleAmountOfElements {
         // contains() testing.
         long containsValueHashSet = test.containsTestForCollection(hashSet, middleAmountOfElements);
 
-        // print results of the testing
-        System.out.println("HashSet methods efficiency for " + middleAmountOfElements + " elements (in nanoseconds):");
-        System.out.println("populate: " + avaragePopulateHashSet + " nanoseconds");
-        System.out.println("add(): " + addValueHashSet);
-        System.out.println("remove(): " + removeValueHashSet);
-        System.out.println("contains(): " + containsValueHashSet);
-        System.out.println();
-
         //TreeSet
 
         // populate testing.
@@ -151,14 +124,55 @@ public class TestForMiddleAmountOfElements {
         // contains() testing.
         long containsValueTreeSet = test.containsTestForCollection(treeSet, middleAmountOfElements);
 
-        // print results of the testing
-        System.out.println("TreeSet methods efficiency for " + middleAmountOfElements + " elements (in nanoseconds):");
-        System.out.println("populate: " + avaragePopulateTreeSet + " nanoseconds");
-        System.out.println("add(): " + addValueTreeSet);
-        System.out.println("remove(): " + removeValueTreeSet);
-        System.out.println("contains(): " + containsValueTreeSet);
-        System.out.println();
+        // creating table's columns and rows with methods' names and time implementation results.
 
+        String leftAlignFormat = "| %-21s | %-9d | %-9d | %-9d | %-9d |%n";
+
+        String line1 = String.format("+-----------------------+-----------+-----------+-----------+-----------+%n");
+        String line2 = String.format("|Method name/Coll. type | ArrayList | LinkedList|  HashSet  |  TreeSet  |%n");
+        String line3 = String.format("+-----------------------+-----------+-----------+-----------+-----------+%n");
+        String line4 = String.format(leftAlignFormat, "populate", avaragePopulateArrayList, avaragePopulateLinkedList, avaragePopulateHashSet, avaragePopulateTreeSet);
+        String line5 = String.format(leftAlignFormat, "add(index) Top", addToTopIndexArrayList, addToTopIndexLinkedList, 0, 0);
+        String line6 = String.format(leftAlignFormat, "add(index) Mid", addToMiddleIndexArrayList, addToMiddleIndexLinkedList, 0, 0);
+        String line7 = String.format(leftAlignFormat, "add(index) End", addToEndIndexArrayList, addToEndIndexLinkedList, 0, 0);
+        String line8 = String.format(leftAlignFormat, "get(index) Top", getFromTopArrayList, getFromTopLinkedList, 0, 0);
+        String line9 = String.format(leftAlignFormat, "get(index) Mid", getFromMiddleArrayList, getFromMiddleLinkedList, 0, 0);
+        String line10 = String.format(leftAlignFormat, "get(index) End", getFromEndArrayList, getFromEndLinkedList, 0, 0);
+        String line11 = String.format(leftAlignFormat, "remove(index) Top", removeFromTopArrayList, removeFromTopLinkedList, 0, 0);
+        String line12 = String.format(leftAlignFormat, "remove(index) Mid", removeFromMiddleArrayList, removeFromMiddleLinkedList, 0, 0);
+        String line13 = String.format(leftAlignFormat, "remove(index) End", removeFromEndArrayList, removeFromEndLinkedList, 0, 0);
+        String line14 = String.format(leftAlignFormat, "contains (value) Top", containsFirstValueArrayList, containsFirstValueLinkedList, 0, 0);
+        String line15 = String.format(leftAlignFormat, "contains (value) Mid", containsMiddleValueArrayList, containsMiddleValueLinkedList, 0, 0);
+        String line16 = String.format(leftAlignFormat, "contains (value) End", containsEndValueArrayList, containsEndValueLinkedList, 0, 0);
+        String line17 = String.format(leftAlignFormat, "iterator.add() Top", iteratorAddToTopArrayList, iteratorAddToTopLinkedList, 0, 0);
+        String line18 = String.format(leftAlignFormat, "iterator.add() Mid", iteratorAddToMiddleArrayList, iteratorAddToMiddleLinkedList, 0, 0);
+        String line19 = String.format(leftAlignFormat, "iterator.add() End", iteratorAddToEndArrayList, iteratorAddToEndLinkedList, 0, 0);
+        String line20 = String.format(leftAlignFormat, "iterator.remove() Top", iteratorRemoveFromTopArrayList, iteratorRemoveFromTopLinkedList, 0, 0);
+        String line21 = String.format(leftAlignFormat, "iterator.remove() Mid", iteratorRemoveFromMiddleArrayList, iteratorRemoveFromMiddleLinkedList, 0, 0);
+        String line22 = String.format(leftAlignFormat, "iterator.remove() End", iteratorRemoveFromEndArrayList, iteratorRemoveFromEndLinkedList, 0, 0);
+        String line23 = String.format(leftAlignFormat, "add(value)", 0, 0, addValueHashSet, addValueTreeSet);
+        String line24 = String.format(leftAlignFormat, "remove(value)", 0, 0, removeValueHashSet, removeValueTreeSet);
+        String line25 = String.format(leftAlignFormat, "contains (value)", 0, 0, containsValueHashSet, containsValueTreeSet);
+        String line26 = String.format("+-----------------------+-----------+-----------+-----------+-----------+%n");
+
+
+        StringBuilder totalDataForTable = new StringBuilder();
+
+        // building the table withe lines and columns;
+        String writtenDataInFile = totalDataForTable.append(line1).append(line2).append(line3).append(line4).append(line5).append(line6).
+                append(line7).append(line8).append(line9).append(line10).append(line11).append(line12).append(line13).
+                append(line14).append(line15).append(line16).append(line17).append(line18).append(line19).append(line20).
+                append(line21).append(line22).append(line23).append(line24).append(line25).append(line26).toString();
+
+        //Printing on console.
+        System.out.println(writtenDataInFile);
+
+        // File creating and writing in it.
+        try {
+            FileWriterForTable.fileWriter(middleAmountOfElements, writtenDataInFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
 

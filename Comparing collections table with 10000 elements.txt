@@ -1,0 +1,26 @@
++-----------------------+-----------+-----------+-----------+-----------+
+|Method name/Coll. type | ArrayList | LinkedList|  HashSet  |  TreeSet  |
++-----------------------+-----------+-----------+-----------+-----------+
+| populate              | 190971    | 223488    | 302062    | 828278    |
+| add(index) Top        | 4200      | 242       | 0         | 0         |
+| add(index) Mid        | 2353      | 20790     | 0         | 0         |
+| add(index) End        | 497       | 945       | 0         | 0         |
+| get(index) Top        | 131       | 128       | 0         | 0         |
+| get(index) Mid        | 137       | 10670     | 0         | 0         |
+| get(index) End        | 105       | 204       | 0         | 0         |
+| remove(index) Top     | 4159      | 134       | 0         | 0         |
+| remove(index) Mid     | 66738     | 53910     | 0         | 0         |
+| remove(index) End     | 16138     | 20597     | 0         | 0         |
+| contains (value) Top  | 125       | 58        | 0         | 0         |
+| contains (value) Mid  | 57924     | 53044     | 0         | 0         |
+| contains (value) End  | 55        | 122       | 0         | 0         |
+| iterator.add() Top    | 1375      | 319       | 0         | 0         |
+| iterator.add() Mid    | 1273      | 240       | 0         | 0         |
+| iterator.add() End    | 248       | 406       | 0         | 0         |
+| iterator.remove() Top | 5178      | 450       | 0         | 0         |
+| iterator.remove() Mid | 4130      | 547       | 0         | 0         |
+| iterator.remove() End | 521       | 433       | 0         | 0         |
+| add(value)            | 0         | 0         | 228       | 222       |
+| remove(value)         | 0         | 0         | 289       | 1970      |
+| contains (value)      | 0         | 0         | 339       | 4443      |
++-----------------------+-----------+-----------+-----------+-----------+

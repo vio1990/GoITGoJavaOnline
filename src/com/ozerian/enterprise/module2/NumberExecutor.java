@@ -4,17 +4,20 @@ import com.ozerian.enterprise.module2.Interfaces.Executor;
 import com.ozerian.enterprise.module2.Interfaces.Task;
 import com.ozerian.enterprise.module2.Interfaces.Validator;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class NumberExecutor implements Executor<Number> {
 
-    private List<? extends Number> validResults;
-    private List<? extends Number> invalidResults;
-    private List<Task<? extends Number>> taskList;
+    private List<Number> validResults = new ArrayList<>();
+    private List<Number> invalidResults = new ArrayList<>();
+    private List<Task<? extends Number>> taskList = new ArrayList<>();
 
     @Override
     public void addTask(Task<? extends Number> task) {
         taskList.add(task);
+        validResults.add(task.getResult());
     }
 
     @Override
@@ -35,12 +38,12 @@ public class NumberExecutor implements Executor<Number> {
     }
 
     @Override
-    public List<? extends Number> getValidResults() {
+    public List<Number> getValidResults() {
         return validResults;
     }
 
     @Override
-    public List<? extends Number> getInvalidResults() {
+    public List<Number> getInvalidResults() {
         return invalidResults;
     }
 }

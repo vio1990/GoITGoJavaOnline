@@ -1,8 +1,8 @@
-package com.ozerian.enterprise.module2;
+package com.ozerian.enterprise.module2.Interfaces;
 
 public interface Validator<T> {
 
     // Валидирует переданое значение
-    boolean isValid(T result);
+    boolean isValid(T value);
 
 }

@@ -1,4 +1,4 @@
-package com.ozerian.enterprise.module2;
+package com.ozerian.enterprise.module2.Interfaces;
 
 public interface Task<T> {
 

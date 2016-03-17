@@ -5,7 +5,6 @@ import com.ozerian.enterprise.module2.Interfaces.Task;
 import com.ozerian.enterprise.module2.Interfaces.Validator;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class NumberExecutor implements Executor<Number> {

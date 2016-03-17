@@ -27,6 +27,7 @@ public class Test {
             System.out.println(number);
         }
 
+        System.out.println("Invalid results: ");
         for (Number number : numberExecutor.getInvalidResults()) {
             System.out.println(number);
         }

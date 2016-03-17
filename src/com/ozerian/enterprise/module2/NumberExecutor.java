@@ -33,6 +33,7 @@ public class NumberExecutor implements Executor<Number> {
     public void execute() {
         for (Task<? extends Number> tasks : taskList) {
             tasks.execute();
+
         }
     }
 

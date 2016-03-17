@@ -23,13 +23,9 @@ public class Test {
         numberExecutor.execute();
 
         System.out.println("Valid results: ");
-        for (Number number : numberExecutor.getValidResults()) {
-            System.out.println(number);
-        }
+        numberExecutor.getValidResults().forEach(System.out::println);
 
         System.out.println("Invalid results: ");
-        for (Number number : numberExecutor.getInvalidResults()) {
-            System.out.println(number);
-        }
+        numberExecutor.getInvalidResults().forEach(System.out::println);
     }
 }

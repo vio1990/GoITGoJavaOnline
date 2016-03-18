@@ -2,15 +2,17 @@ package com.ozerian.enterprise.module2;
 
 import com.ozerian.enterprise.module2.Interfaces.Executor;
 import com.ozerian.enterprise.module2.Interfaces.Task;
-import com.ozerian.enterprise.module2.Interfaces.Validator;
 
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * This is the test class, which demonstrates framework implementation.
+ */
 public class Test {
     public static void main(String[] args) {
 
-        List<Task<Integer>> taskIntList = Arrays.asList(new AddInteger(5, 12), new AddInteger(11, 11), new AddInteger(5, 3));
+        List<Task<Integer>> taskIntList = Arrays.asList(new AddInteger(5, 12), new AddInteger(-11, -11), new AddInteger(5, 3));
 
         Executor<Number> numberExecutor = new NumberExecutor();
 

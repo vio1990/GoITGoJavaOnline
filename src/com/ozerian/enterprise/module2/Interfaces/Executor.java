@@ -2,24 +2,41 @@ package com.ozerian.enterprise.module2.Interfaces;
 
 import java.util.List;
 
+/**
+ *  Interface for execution some tasks.
+ * @param <T> This describe type parameter.
+ */
 public interface Executor<T> {
 
-    // Добавить таск на выполнение. Результат таска будет доступен через метод getValidResults().
-    // Бросает Эксепшн если уже был вызван метод execute()
+
+    /**
+     * Add a task to perform.
+     * @param task task, which adding for implementation.
+     */
     void addTask(Task<? extends T> task);
 
-    // Добавить таск на выполнение и валидатор результата. Результат таска будет записан в ValidResults если validator.isValid вернет true для этого результата
-    // Результат таска будет записан в InvalidResults если validator.isValid вернет false для этого результата
-    // Бросает Эксепшн если уже был вызван метод execute()
+    /**
+     * Add task to perform with result's validation.
+     * @param task task, which adding for implementation.
+     * @param validator validator for checking the correctness of task's result.
+     */
     void addTask(Task<? extends T> task, Validator<T> validator);
 
-    // Выполнить все добавленые таски
+    /**
+     * Implementation of all added tasks.
+     */
     void execute();
 
-    // Получить валидные результаты. Бросает Эксепшн если не был вызван метод execute()
+    /**
+     * The method returns the list with positive results, which will be handled by validator.
+     * @return the list with correct tasks' results.
+     */
     List<? extends T> getValidResults();
 
-    // Получить невалидные результаты. Бросает Эксепшн если не был вызван метод execute()
+    /**
+     * The method returns the list with invalid results, which will be handled by validator.
+     * @return the list with non-correct tasks' results.
+     */
     List<? extends T> getInvalidResults();
 
 }

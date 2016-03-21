@@ -25,14 +25,15 @@ public class NumberExecutor implements Executor<Number> {
     /**
      * Add a task to perform. It means that the task is being added to the taskList.
      *
-     * @param task task, which adding for implementation.
+     * @param currentTask task, which adding for implementation.
      */
     @Override
-    public void addTask(Task<? extends Number> task) throws ExecuteWasLaunchedException {
+    public void addTask(Task<? extends Number> currentTask) throws ExecuteWasLaunchedException {
+        this.task = currentTask;
         if (isExecuteLaunched) {
             throw new ExecuteWasLaunchedException();
         }
-        taskList.add(task);
+        taskList.add(currentTask);
     }
 
     /**
@@ -79,6 +80,7 @@ public class NumberExecutor implements Executor<Number> {
             throw new ExecuteWasNotLaunchException();
         }
         return validResults;
+
     }
 
     /**

@@ -19,6 +19,7 @@ public class Test {
 
             Executor<Number> numberExecutor = new NumberExecutor();
 
+
             for (Task<Integer> intTask : taskIntList) {
                 numberExecutor.addTask(intTask);
             }
@@ -32,14 +33,16 @@ public class Test {
 
             System.out.println("Invalid results: ");
             numberExecutor.getInvalidResults().forEach(System.out::println);
+
         } catch (ExecuteWasLaunchedException e) {
+            System.out.println("Premature execute method launch detected!");
             e.printStackTrace();
-            System.out.println("Execute method launch detected!");
         } catch (ExecuteWasNotLaunchException e) {
-            e.printStackTrace();
             System.out.println("Execute method hasn't been launched!");
+            e.printStackTrace();
+        } catch (NullPointerException e) {
+            System.out.println("Error! Wrong command sequence!");
+            e.printStackTrace();
         }
     }
-
-
 }

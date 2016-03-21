@@ -20,7 +20,7 @@ public class NumberExecutor implements Executor<Number> {
     private Validator<Number> resultValidator = new NumberValidator();
     private Task<? extends Number> task;
     private Validator<Number> validator;
-    private static boolean isExecuteLaunch = false;
+    private static boolean isExecuteLaunched = false;
 
     /**
      * Add a task to perform. It means that the task is being added to the taskList.
@@ -29,7 +29,7 @@ public class NumberExecutor implements Executor<Number> {
      */
     @Override
     public void addTask(Task<? extends Number> task) throws ExecuteWasLaunchedException {
-        if (isExecuteLaunch) {
+        if (isExecuteLaunched) {
             throw new ExecuteWasLaunchedException();
         }
         taskList.add(task);
@@ -45,7 +45,7 @@ public class NumberExecutor implements Executor<Number> {
     public void addTask(Task<? extends Number> currentTask, Validator<Number> numberValidator) throws ExecuteWasLaunchedException {
         this.task = currentTask;
         this.validator = numberValidator;
-        if (isExecuteLaunch) {
+        if (isExecuteLaunched) {
             throw new ExecuteWasLaunchedException();
         }
         taskList.add(currentTask);
@@ -56,7 +56,7 @@ public class NumberExecutor implements Executor<Number> {
      */
     @Override
     public void execute() {
-        isExecuteLaunch = true;
+        isExecuteLaunched = true;
         for (Task<? extends Number> tasks : taskList) {
             tasks.execute();
             if (validator.isValid(tasks.getResult())) {
@@ -75,7 +75,7 @@ public class NumberExecutor implements Executor<Number> {
      */
     @Override
     public List<Number> getValidResults() throws ExecuteWasNotLaunchException {
-        if (!isExecuteLaunch) {
+        if (!isExecuteLaunched) {
             throw new ExecuteWasNotLaunchException();
         }
         return validResults;
@@ -88,7 +88,7 @@ public class NumberExecutor implements Executor<Number> {
      */
     @Override
     public List<Number> getInvalidResults() throws ExecuteWasNotLaunchException {
-        if (!isExecuteLaunch) {
+        if (!isExecuteLaunched) {
             throw new ExecuteWasNotLaunchException();
         }
         return invalidResults;

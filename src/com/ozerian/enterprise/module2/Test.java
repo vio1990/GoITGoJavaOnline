@@ -33,11 +33,11 @@ public class Test {
             System.out.println("Invalid results: ");
             numberExecutor.getInvalidResults().forEach(System.out::println);
         } catch (ExecuteWasLaunchedException e) {
+            e.printStackTrace();
             System.out.println("Execute method launch detected!");
-            e.printStackTrace();
         } catch (ExecuteWasNotLaunchException e) {
-            System.out.println("Execute method hasn't been launched!");
             e.printStackTrace();
+            System.out.println("Execute method hasn't been launched!");
         }
     }
 

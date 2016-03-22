@@ -1,6 +1,6 @@
 package com.ozerian.enterprise.module2;
 
-import com.ozerian.enterprise.module2.Interfaces.Task;
+import com.ozerian.enterprise.module2.interfaces.Task;
 
 /**
  * This class implements Task interface and typified by Double.

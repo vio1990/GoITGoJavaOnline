@@ -1,7 +1,7 @@
-package com.ozerian.enterprise.module2.Interfaces;
+package com.ozerian.enterprise.module2.interfaces;
 
-import com.ozerian.enterprise.module2.Exceptions.ExecuteWasLaunchedException;
-import com.ozerian.enterprise.module2.Exceptions.ExecuteWasNotLaunchException;
+import com.ozerian.enterprise.module2.exceptions.ExecuteWasLaunchedException;
+import com.ozerian.enterprise.module2.exceptions.ExecuteWasNotLaunchException;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.ozerian.enterprise.module2;
 
-import com.ozerian.enterprise.module2.Interfaces.Validator;
+import com.ozerian.enterprise.module2.interfaces.Validator;
 
 /**
  * Validator for Number type of data, implements Validator<T> interface.

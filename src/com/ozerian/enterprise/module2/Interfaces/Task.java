@@ -1,4 +1,4 @@
-package com.ozerian.enterprise.module2.Interfaces;
+package com.ozerian.enterprise.module2.interfaces;
 
 /**
  *  The interface with methods for some Task, which wil be

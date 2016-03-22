@@ -1,4 +1,4 @@
-package com.ozerian.enterprise.module2.Interfaces;
+package com.ozerian.enterprise.module2.interfaces;
 
 /**
  * Interface for checking the correctness some value.

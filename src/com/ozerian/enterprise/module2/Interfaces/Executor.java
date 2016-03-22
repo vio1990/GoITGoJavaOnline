@@ -25,7 +25,7 @@ public interface Executor<T> {
      * @param task      task, which adding for implementation.
      * @param validator validator for checking the correctness of task's result.
      */
-    void addTask(Task<? extends T> task, Validator<T> validator) throws ExecuteWasLaunchedException;
+    void addTask(Task<? extends T> task, Validator<? super T> validator) throws ExecuteWasLaunchedException;
 
     /**
      * Implementation of all added tasks.

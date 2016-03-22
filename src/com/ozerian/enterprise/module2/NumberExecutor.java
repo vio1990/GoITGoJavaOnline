@@ -19,7 +19,7 @@ public class NumberExecutor implements Executor<Number> {
     private List<Task<? extends Number>> taskList = new ArrayList<>();
     private Validator<Number> resultValidator = new NumberValidator();
     private Task<? extends Number> task;
-    private Validator<Number> validator;
+    private Validator<? super Number> validator;
     private static boolean isExecuteLaunched = false;
 
     /**
@@ -31,7 +31,7 @@ public class NumberExecutor implements Executor<Number> {
     public void addTask(Task<? extends Number> currentTask) throws ExecuteWasLaunchedException {
         this.task = currentTask;
         if (isExecuteLaunched) {
-            throw new ExecuteWasLaunchedException();
+            throw new ExecuteWasLaunchedException("Premature execute method launch detected!");
         }
         taskList.add(currentTask);
     }
@@ -43,11 +43,11 @@ public class NumberExecutor implements Executor<Number> {
      * @param numberValidator checking if result is valid.
      */
     @Override
-    public void addTask(Task<? extends Number> currentTask, Validator<Number> numberValidator) throws ExecuteWasLaunchedException {
+    public void addTask(Task<? extends Number> currentTask, Validator<? super Number> numberValidator) throws ExecuteWasLaunchedException {
         this.task = currentTask;
         this.validator = numberValidator;
         if (isExecuteLaunched) {
-            throw new ExecuteWasLaunchedException();
+            throw new ExecuteWasLaunchedException("Premature execute method launch detected!");
         }
         taskList.add(currentTask);
     }
@@ -77,7 +77,7 @@ public class NumberExecutor implements Executor<Number> {
     @Override
     public List<Number> getValidResults() throws ExecuteWasNotLaunchException {
         if (!isExecuteLaunched) {
-            throw new ExecuteWasNotLaunchException();
+            throw new ExecuteWasNotLaunchException("Execute method hasn't been launched!");
         }
         return validResults;
 
@@ -91,7 +91,7 @@ public class NumberExecutor implements Executor<Number> {
     @Override
     public List<Number> getInvalidResults() throws ExecuteWasNotLaunchException {
         if (!isExecuteLaunched) {
-            throw new ExecuteWasNotLaunchException();
+            throw new ExecuteWasNotLaunchException("Execute method hasn't been launched!");
         }
         return invalidResults;
     }

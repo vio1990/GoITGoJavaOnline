@@ -39,7 +39,7 @@ public class NumberExecutor implements Executor<Number> {
     /**
      * Add a task to perform with result validation. It means that the task is being added to the taskList.
      *
-     * @param currentTask            task, which adding for implementation.
+     * @param currentTask     task, which adding for implementation.
      * @param numberValidator checking if result is valid.
      */
     @Override

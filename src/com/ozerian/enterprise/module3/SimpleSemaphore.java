@@ -11,16 +11,18 @@ public class SimpleSemaphore implements Semaphore {
 
     /**
      * This Constructor creates an object of the Semaphore with transmitted number of permits.
-     * @param permits int available quantity of permits.
+     *
+     * @param counter int available quantity of permits.
      */
-    public SimpleSemaphore(int permits) {
-        if (permits <= 0) throw new IllegalArgumentException("Permits' quantity should be more than \"0\" ");
-        this.counter = permits;
+    public SimpleSemaphore(int counter) {
+        if (counter <= 0) throw new IllegalArgumentException("Permits' quantity should be more than \"0\" ");
+        this.counter = counter;
     }
 
     /**
      * Requests permission. If there is a free permission, a thread captures it. If not -
      * suspends the thread until appearance a free permit.
+     *
      * @throws InterruptedException
      */
     @Override
@@ -34,6 +36,7 @@ public class SimpleSemaphore implements Semaphore {
     /**
      * Requests transmitted number of permits. If there are such permits' quantity, threads capture it.
      * If not - suspends threads until appearance transmitted number of permits.
+     *
      * @param permits int necessary quantity of permits.
      * @throws InterruptedException
      */
@@ -42,7 +45,7 @@ public class SimpleSemaphore implements Semaphore {
         while (counter < permits) {
             this.wait();
         }
-        counter -= permits;
+        counter--;
     }
 
     /**
@@ -60,11 +63,12 @@ public class SimpleSemaphore implements Semaphore {
     /**
      * Frees transmitted quantity of permits, returning it to the semaphore.
      * Notifies all threads about freed permits.
+     *
      * @param permits int necessary quantity of permits to free.
      */
     @Override
     public synchronized void release(int permits) {
-        if (counter == 0) {
+        if (counter >= permits) {
             this.notifyAll();
         }
         counter += permits;
@@ -72,6 +76,7 @@ public class SimpleSemaphore implements Semaphore {
 
     /**
      * Returns available number of permits.
+     *
      * @return int number of available permits.
      */
     @Override

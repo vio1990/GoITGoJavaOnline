@@ -1,26 +1,40 @@
 package com.ozerian.enterprise.module3.interfaces;
 
+/**
+ * Interface for Semaphore implementations.
+ */
 public interface Semaphore {
-    // Запрашивает разрешение. Если есть свободное захватывает его. Если нет - приостанавливает поток до тех пор пока не появится свободное разрешение.
 
-    void acquire();
+    /**
+     * Requests permission. If there is a free permission, a thread captures it. If not -
+     * suspends the thread until appearance a free permit.
+     * @throws InterruptedException
+     */
+    void acquire() throws InterruptedException;
 
-    // Запрашивает переданое количество разрешений. Если есть переданое количество свободных разрешений захватывает их.
+    /**
+     * Requests transmitted number of permits. If there are such permits' quantity, threads capture it.
+     * If not - suspends threads until appearance transmitted number of permits.
+     * @param permits int necessary quantity of permits.
+     * @throws InterruptedException
+     */
+    void acquire(int permits) throws InterruptedException;
 
-    // Если нет - приостанавливает поток до тех пор пока не появится переданое колтчество свободных разрешений.
-
-    void acquire(int permits);
-
-    // Отпускает разрешение возвращая его семафору.
-
+    /**
+     * Frees a permit, returning it to the semaphore.
+     */
     void release();
 
-    // Отпускает переданое количество разрешений возварщая их семафору.
-
+    /**
+     * Frees transmitted quantity of permits, returning it to the semaphore.
+     * @param permits int necessary quantity of permits to free.
+     */
    void release(int permits);
 
-    // Возвращает количество свободных разрешений на данный момент.
-
+    /**
+     * Returns available number of permits.
+     * @return int number of available permits.
+     */
     int getAvailablePermits();
 
 }

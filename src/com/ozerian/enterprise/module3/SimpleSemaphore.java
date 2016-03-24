@@ -43,11 +43,9 @@ public class SimpleSemaphore implements Semaphore {
     @Override
     public synchronized void acquire(int permits) throws InterruptedException {
         while (counter < permits) {
-                this.wait();
+            this.wait();
         }
-        if (counter >= permits) {
-            counter -= permits;
-        }
+        counter -= permits;
     }
 
     /**

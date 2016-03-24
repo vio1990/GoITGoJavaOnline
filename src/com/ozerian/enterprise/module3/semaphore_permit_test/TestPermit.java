@@ -7,7 +7,7 @@ public class TestPermit {
     public static void main(String[] args) throws InterruptedException {
         SimpleSemaphore simpleSemaphore = new SimpleSemaphore(5);
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 5; i++) {
             new Thread(new ThreadRegulator(simpleSemaphore)).start();
             Thread.currentThread().sleep(400);
         }

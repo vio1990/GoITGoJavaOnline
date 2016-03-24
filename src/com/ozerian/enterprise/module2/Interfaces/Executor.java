@@ -1,7 +1,6 @@
 package com.ozerian.enterprise.module2.interfaces;
 
-import com.ozerian.enterprise.module2.exceptions.ExecuteWasLaunchedException;
-import com.ozerian.enterprise.module2.exceptions.ExecuteWasNotLaunchException;
+import com.ozerian.enterprise.module2.exceptions.WrongExecuteLaunchException;
 
 import java.util.List;
 
@@ -17,7 +16,7 @@ public interface Executor<T> {
      *
      * @param task task, which adding for implementation.
      */
-    void addTask(Task<? extends T> task) throws ExecuteWasLaunchedException;
+    void addTask(Task<? extends T> task) throws WrongExecuteLaunchException;
 
     /**
      * Add task to perform with result's validation.
@@ -25,7 +24,7 @@ public interface Executor<T> {
      * @param task      task, which adding for implementation.
      * @param validator validator for checking the correctness of task's result.
      */
-    void addTask(Task<? extends T> task, Validator<? super T> validator) throws ExecuteWasLaunchedException;
+    void addTask(Task<? extends T> task, Validator<? super T> validator) throws WrongExecuteLaunchException;
 
     /**
      * Implementation of all added tasks.
@@ -37,13 +36,13 @@ public interface Executor<T> {
      *
      * @return the list with correct tasks' results.
      */
-    List<? extends T> getValidResults() throws ExecuteWasNotLaunchException;
+    List<? extends T> getValidResults() throws WrongExecuteLaunchException;
 
     /**
      * The method returns the list with invalid results, which will be handled by validator.
      *
      * @return the list with non-correct tasks' results.
      */
-    List<? extends T> getInvalidResults() throws ExecuteWasNotLaunchException;
+    List<? extends T> getInvalidResults() throws WrongExecuteLaunchException;
 
 }

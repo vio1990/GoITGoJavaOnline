@@ -1,7 +1,6 @@
 package com.ozerian.enterprise.module2;
 
-import com.ozerian.enterprise.module2.exceptions.ExecuteWasLaunchedException;
-import com.ozerian.enterprise.module2.exceptions.ExecuteWasNotLaunchException;
+import com.ozerian.enterprise.module2.exceptions.WrongExecuteLaunchException;
 import com.ozerian.enterprise.module2.interfaces.Executor;
 import com.ozerian.enterprise.module2.interfaces.Task;
 
@@ -34,11 +33,8 @@ public class Test {
             System.out.println("Invalid results: ");
             numberExecutor.getInvalidResults().forEach(System.out::println);
 
-        } catch (ExecuteWasLaunchedException e) {
-            System.out.println("Premature execute method launch detected!");
-            e.printStackTrace();
-        } catch (ExecuteWasNotLaunchException e) {
-            System.out.println("Execute method hasn't been launched!");
+        } catch (WrongExecuteLaunchException e) {
+            System.out.println("Premature launch or no launch execute's method detected!");
             e.printStackTrace();
         } catch (NullPointerException e) {
             System.out.println("Error! Wrong command sequence!");

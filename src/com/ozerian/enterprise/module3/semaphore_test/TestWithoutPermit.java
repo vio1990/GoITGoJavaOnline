@@ -1,6 +1,7 @@
 package com.ozerian.enterprise.module3.semaphore_test;
 
 import com.ozerian.enterprise.module3.SimpleSemaphore;
+import com.ozerian.enterprise.module3.ThreadRegulator;
 
 public class TestWithoutPermit {
     public static void main(String[] args) throws InterruptedException {

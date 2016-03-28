@@ -1,6 +1,5 @@
 package com.ozerian.enterprise.module3;
 
-import com.ozerian.enterprise.module3.SimpleSemaphore;
 
 public class ThreadRegulator implements Runnable {
 
@@ -20,9 +19,8 @@ public class ThreadRegulator implements Runnable {
             System.out.println(Thread.currentThread().getName() + " do some work!");
             Thread.currentThread().sleep(1000);
             System.out.println(simpleSemaphore.getAvailablePermits());
-            simpleSemaphore.release();
-            System.out.println(simpleSemaphore.getAvailablePermits());
             System.out.println(Thread.currentThread().getName() + " stop working!");
+            simpleSemaphore.release();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

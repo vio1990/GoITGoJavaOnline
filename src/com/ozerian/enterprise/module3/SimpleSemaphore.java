@@ -6,7 +6,7 @@ import com.ozerian.enterprise.module3.interfaces.Semaphore;
  * This class is the example of implementation of the Semaphore interface.
  */
 public class SimpleSemaphore implements Semaphore {
-
+    
     private int counter;
 
     /**

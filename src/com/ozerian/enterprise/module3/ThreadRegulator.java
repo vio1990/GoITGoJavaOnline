@@ -21,6 +21,7 @@ public class ThreadRegulator implements Runnable {
             System.out.println(simpleSemaphore.getAvailablePermits());
             System.out.println(Thread.currentThread().getName() + " stop working!");
             simpleSemaphore.release();
+            System.out.println(simpleSemaphore.getAvailablePermits());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

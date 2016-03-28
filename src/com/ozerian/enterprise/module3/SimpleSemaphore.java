@@ -6,7 +6,7 @@ import com.ozerian.enterprise.module3.interfaces.Semaphore;
  * This class is the example of implementation of the Semaphore interface.
  */
 public class SimpleSemaphore implements Semaphore {
-    
+
     private int counter;
 
     /**
@@ -54,7 +54,7 @@ public class SimpleSemaphore implements Semaphore {
      */
     @Override
     public synchronized void release() {
-        if (counter == 0) {
+        if (counter >= 0) {
             this.notify();
         }
         counter++;
@@ -68,7 +68,7 @@ public class SimpleSemaphore implements Semaphore {
      */
     @Override
     public synchronized void release(int permits) {
-        if (counter == 0) {
+        if (counter >= 0) {
             this.notifyAll();
         }
         counter += permits;

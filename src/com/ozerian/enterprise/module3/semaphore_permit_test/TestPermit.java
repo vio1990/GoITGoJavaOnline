@@ -5,7 +5,7 @@ import com.ozerian.enterprise.module3.ThreadRegulator;
 
 public class TestPermit {
     public static void main(String[] args) throws InterruptedException {
-        SimpleSemaphore simpleSemaphore = new SimpleSemaphore(5);
+        SimpleSemaphore simpleSemaphore = new SimpleSemaphore(3);
         for (int i = 0; i < 5; i++) {
             new Thread(new ThreadRegulator(simpleSemaphore)).start();
             Thread.currentThread().sleep(400);
@@ -22,6 +22,7 @@ public class TestPermit {
                 System.out.println(simpleSemaphore.getAvailablePermits());
                 System.out.println("Permit " + Thread.currentThread().getName() + " stop working!");
                 simpleSemaphore.release(3);
+                System.out.println(simpleSemaphore.getAvailablePermits());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

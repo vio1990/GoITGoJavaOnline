@@ -1,4 +1,4 @@
-package com.ozerian.enterprise.module3;
+package com.ozerian.enterprise.module3_1;
 
 
 public class ThreadRegulator implements Runnable {

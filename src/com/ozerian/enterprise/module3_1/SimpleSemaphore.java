@@ -1,6 +1,6 @@
-package com.ozerian.enterprise.module3;
+package com.ozerian.enterprise.module3_1;
 
-import com.ozerian.enterprise.module3.interfaces.Semaphore;
+import com.ozerian.enterprise.module3_1.interfaces.Semaphore;
 
 /**
  * This class is the example of implementation of the Semaphore interface.

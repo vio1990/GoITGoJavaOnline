@@ -1,7 +1,7 @@
-package com.ozerian.enterprise.module3.semaphore_permit_test;
+package com.ozerian.enterprise.module3_1.semaphore_permit_test;
 
-import com.ozerian.enterprise.module3.SimpleSemaphore;
-import com.ozerian.enterprise.module3.ThreadRegulator;
+import com.ozerian.enterprise.module3_1.SimpleSemaphore;
+import com.ozerian.enterprise.module3_1.ThreadRegulator;
 
 public class TestPermit {
     public static void main(String[] args) throws InterruptedException {

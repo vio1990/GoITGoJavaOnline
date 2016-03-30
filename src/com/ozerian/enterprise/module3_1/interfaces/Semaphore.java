@@ -1,4 +1,4 @@
-package com.ozerian.enterprise.module3.interfaces;
+package com.ozerian.enterprise.module3_1.interfaces;
 
 /**
  * Interface for Semaphore implementations.

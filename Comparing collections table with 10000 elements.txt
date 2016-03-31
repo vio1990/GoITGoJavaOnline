@@ -1,26 +1,27 @@
+RESULTS OF THE TEST FOR 10000 ELEMENTS.
 +-----------------------+-----------+-----------+-----------+-----------+
 |Method name/Coll. type | ArrayList | LinkedList|  HashSet  |  TreeSet  |
 +-----------------------+-----------+-----------+-----------+-----------+
-| populate              | 190971    | 223488    | 302062    | 828278    |
-| add(index) Top        | 4200      | 242       | 0         | 0         |
-| add(index) Mid        | 2353      | 20790     | 0         | 0         |
-| add(index) End        | 497       | 945       | 0         | 0         |
-| get(index) Top        | 131       | 128       | 0         | 0         |
-| get(index) Mid        | 137       | 10670     | 0         | 0         |
-| get(index) End        | 105       | 204       | 0         | 0         |
-| remove(index) Top     | 4159      | 134       | 0         | 0         |
-| remove(index) Mid     | 66738     | 53910     | 0         | 0         |
-| remove(index) End     | 16138     | 20597     | 0         | 0         |
-| contains (value) Top  | 125       | 58        | 0         | 0         |
-| contains (value) Mid  | 57924     | 53044     | 0         | 0         |
-| contains (value) End  | 55        | 122       | 0         | 0         |
-| iterator.add() Top    | 1375      | 319       | 0         | 0         |
-| iterator.add() Mid    | 1273      | 240       | 0         | 0         |
-| iterator.add() End    | 248       | 406       | 0         | 0         |
-| iterator.remove() Top | 5178      | 450       | 0         | 0         |
-| iterator.remove() Mid | 4130      | 547       | 0         | 0         |
-| iterator.remove() End | 521       | 433       | 0         | 0         |
-| add(value)            | 0         | 0         | 228       | 222       |
-| remove(value)         | 0         | 0         | 289       | 1970      |
-| contains (value)      | 0         | 0         | 339       | 4443      |
+| populate              | 222400    | 325879    | 360241    | 1228467   |
+| add(index) Top        | 7125      | 403       | 0         | 0         |
+| add(index) Mid        | 14554     | 25757     | 0         | 0         |
+| add(index) End        | 752       | 1296      | 0         | 0         |
+| get(index) Top        | 231       | 260       | 0         | 0         |
+| get(index) Mid        | 392       | 18594     | 0         | 0         |
+| get(index) End        | 163       | 278       | 0         | 0         |
+| remove(index) Top     | 6352      | 260       | 0         | 0         |
+| remove(index) Mid     | 86497     | 78122     | 0         | 0         |
+| remove(index) End     | 35538     | 21978     | 0         | 0         |
+| contains (value) Top  | 122       | 166       | 0         | 0         |
+| contains (value) Mid  | 94946     | 117012    | 0         | 0         |
+| contains (value) End  | 64        | 272       | 0         | 0         |
+| iterator.add() Top    | 1340      | 4496      | 0         | 0         |
+| iterator.add() Mid    | 1118      | 409       | 0         | 0         |
+| iterator.add() End    | 260       | 2947      | 0         | 0         |
+| iterator.remove() Top | 6855      | 383       | 0         | 0         |
+| iterator.remove() Mid | 4045      | 541       | 0         | 0         |
+| iterator.remove() End | 3184      | 398       | 0         | 0         |
+| add(value)            | 0         | 0         | 313       | 275       |
+| remove(value)         | 0         | 0         | 327       | 1958      |
+| contains (value)      | 0         | 0         | 254       | 9001      |
 +-----------------------+-----------+-----------+-----------+-----------+

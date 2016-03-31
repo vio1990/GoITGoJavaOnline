@@ -1,30 +1,35 @@
 package com.ozerian.enterprise.module1;
 
 import java.io.IOException;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Set;
-import java.util.TreeSet;
-import java.util.HashSet;
+import java.util.*;
 
 
-public class TestForSmallAmountOfElements {
-    public static void main(String[] args) throws IOException {
+class TestImplementation {
 
-        final int testQuantity = 100;
-        final int smallAmountOfElements = 10000;
+    private int testQuantity;
+    private int amountOfElements;
+    private String writtenDataInFile;
 
-        // creating of the testing Collections' implementations.
-        List<Integer> arrayList = new ArrayList<>();
-        List<Integer> linkedList = new LinkedList<>();
-        Set<Integer> hashSet = new HashSet<>();
-        Set<Integer> treeSet = new TreeSet<>();
+    TestImplementation(int testQuantity, int amountOfElements) throws IOException {
+        this.testQuantity = testQuantity;
+        this.amountOfElements = amountOfElements;
+    }
 
-        /* creating an object CollectionsTimeTestingMethods class with
-         the amount of elements and amount of tests as constructor's parameters.
-         */
-        CollectionsTimeTestingMethods test = new CollectionsTimeTestingMethods(smallAmountOfElements, testQuantity);
+    // creating of the testing Collections' implementations.
+    private List<Integer> arrayList = new ArrayList<>();
+    private List<Integer> linkedList = new LinkedList<>();
+    private Set<Integer> hashSet = new HashSet<>();
+    private Set<Integer> treeSet = new TreeSet<>();
+
+    /* creating an object CollectionsTimeTestingMethods class with
+     the amount of elements and amount of tests as constructor's parameters.
+     */
+
+    /**
+     * Running all of the tests for each type of Collections.
+     */
+    void runTest() {
+        CollectionsTimeTestingMethods test = new CollectionsTimeTestingMethods(amountOfElements, testQuantity);
 
         //ArrayList testing
 
@@ -32,34 +37,34 @@ public class TestForSmallAmountOfElements {
         long avaragePopulateArrayList = test.populateTestForCollection(arrayList);
 
         // add() testing in at three positions (top, middle and end).
-        long addToMiddleIndexArrayList = test.addIndexTestForList(arrayList, smallAmountOfElements / 2);
+        long addToMiddleIndexArrayList = test.addIndexTestForList(arrayList, amountOfElements / 2);
         long addToTopIndexArrayList = test.addIndexTestForList(arrayList, 0);
-        long addToEndIndexArrayList = test.addIndexTestForList(arrayList, smallAmountOfElements);
+        long addToEndIndexArrayList = test.addIndexTestForList(arrayList, amountOfElements);
 
         // remove() testing in at three positions (top, middle and end).
-        long removeFromMiddleArrayList = test.removeTestForList(arrayList, smallAmountOfElements / 2);
+        long removeFromMiddleArrayList = test.removeTestForList(arrayList, amountOfElements / 2);
         long removeFromTopArrayList = test.removeTestForList(arrayList, 0);
-        long removeFromEndArrayList = test.removeTestForList(arrayList, smallAmountOfElements);
+        long removeFromEndArrayList = test.removeTestForList(arrayList, amountOfElements);
 
         // get() testing in at three positions (top, middle and end).
-        long getFromMiddleArrayList = test.getTestForList(arrayList, smallAmountOfElements / 2);
+        long getFromMiddleArrayList = test.getTestForList(arrayList, amountOfElements / 2);
         long getFromTopArrayList = test.getTestForList(arrayList, 0);
-        long getFromEndArrayList = test.getTestForList(arrayList, smallAmountOfElements - 1);
+        long getFromEndArrayList = test.getTestForList(arrayList, amountOfElements - 1);
 
         // contains() testing in at three positions (top, middle and end).
-        long containsMiddleValueArrayList = test.containsTestForCollection(arrayList, smallAmountOfElements / 2);
+        long containsMiddleValueArrayList = test.containsTestForCollection(arrayList, amountOfElements / 2);
         long containsFirstValueArrayList = test.containsTestForCollection(arrayList, 0);
-        long containsEndValueArrayList = test.getTestForList(arrayList, smallAmountOfElements - 1);
+        long containsEndValueArrayList = test.getTestForList(arrayList, amountOfElements - 1);
 
         // iterator.add() testing in at three positions (top, middle and end).
-        long iteratorAddToMiddleArrayList = test.iteratorAddTestForList(arrayList, smallAmountOfElements / 2);
+        long iteratorAddToMiddleArrayList = test.iteratorAddTestForList(arrayList, amountOfElements / 2);
         long iteratorAddToTopArrayList = test.iteratorAddTestForList(arrayList, 0);
-        long iteratorAddToEndArrayList = test.iteratorAddTestForList(arrayList, smallAmountOfElements);
+        long iteratorAddToEndArrayList = test.iteratorAddTestForList(arrayList, amountOfElements);
 
         // iterator.remove() testing in at three positions (top, middle and end).
-        long iteratorRemoveFromMiddleArrayList = test.iteratorRemoveTestForList(arrayList, smallAmountOfElements / 2);
+        long iteratorRemoveFromMiddleArrayList = test.iteratorRemoveTestForList(arrayList, amountOfElements / 2);
         long iteratorRemoveFromTopArrayList = test.iteratorRemoveTestForList(arrayList, 0);
-        long iteratorRemoveFromEndArrayList = test.iteratorRemoveTestForList(arrayList, smallAmountOfElements);
+        long iteratorRemoveFromEndArrayList = test.iteratorRemoveTestForList(arrayList, amountOfElements);
 
         //LinkedList
 
@@ -67,34 +72,34 @@ public class TestForSmallAmountOfElements {
         long avaragePopulateLinkedList = test.populateTestForCollection(linkedList);
 
         // add() testing in at three positions (top, middle and end).
-        long addToMiddleIndexLinkedList = test.addIndexTestForList(linkedList, smallAmountOfElements / 2);
+        long addToMiddleIndexLinkedList = test.addIndexTestForList(linkedList, amountOfElements / 2);
         long addToTopIndexLinkedList = test.addIndexTestForList(linkedList, 0);
-        long addToEndIndexLinkedList = test.addIndexTestForList(linkedList, smallAmountOfElements);
+        long addToEndIndexLinkedList = test.addIndexTestForList(linkedList, amountOfElements);
 
         // remove() testing in at three positions (top, middle and end).
-        long removeFromMiddleLinkedList = test.removeTestForList(linkedList, smallAmountOfElements / 2);
+        long removeFromMiddleLinkedList = test.removeTestForList(linkedList, amountOfElements / 2);
         long removeFromTopLinkedList = test.removeTestForList(linkedList, 0);
-        long removeFromEndLinkedList = test.removeTestForList(linkedList, smallAmountOfElements);
+        long removeFromEndLinkedList = test.removeTestForList(linkedList, amountOfElements);
 
         // get() testing in at three positions (top, middle and end).
-        long getFromMiddleLinkedList = test.getTestForList(linkedList, smallAmountOfElements / 2);
+        long getFromMiddleLinkedList = test.getTestForList(linkedList, amountOfElements / 2);
         long getFromTopLinkedList = test.getTestForList(linkedList, 0);
-        long getFromEndLinkedList = test.getTestForList(linkedList, smallAmountOfElements - 1);
+        long getFromEndLinkedList = test.getTestForList(linkedList, amountOfElements - 1);
 
         // contains() testing in at three positions (top, middle and end).
-        long containsMiddleValueLinkedList = test.containsTestForCollection(linkedList, smallAmountOfElements / 2);
+        long containsMiddleValueLinkedList = test.containsTestForCollection(linkedList, amountOfElements / 2);
         long containsFirstValueLinkedList = test.containsTestForCollection(linkedList, 0);
-        long containsEndValueLinkedList = test.getTestForList(linkedList, smallAmountOfElements - 1);
+        long containsEndValueLinkedList = test.getTestForList(linkedList, amountOfElements - 1);
 
         // iterator.add() testing in at three positions (top, middle and end).
-        long iteratorAddToMiddleLinkedList = test.iteratorAddTestForList(linkedList, smallAmountOfElements / 2);
+        long iteratorAddToMiddleLinkedList = test.iteratorAddTestForList(linkedList, amountOfElements / 2);
         long iteratorAddToTopLinkedList = test.iteratorAddTestForList(linkedList, 0);
-        long iteratorAddToEndLinkedList = test.iteratorAddTestForList(linkedList, smallAmountOfElements);
+        long iteratorAddToEndLinkedList = test.iteratorAddTestForList(linkedList, amountOfElements);
 
         // iterator.remove() testing in at three positions (top, middle and end).
-        long iteratorRemoveFromMiddleLinkedList = test.iteratorRemoveTestForList(linkedList, smallAmountOfElements / 2);
+        long iteratorRemoveFromMiddleLinkedList = test.iteratorRemoveTestForList(linkedList, amountOfElements / 2);
         long iteratorRemoveFromTopLinkedList = test.iteratorRemoveTestForList(linkedList, 0);
-        long iteratorRemoveFromEndLinkedList = test.iteratorRemoveTestForList(linkedList, smallAmountOfElements);
+        long iteratorRemoveFromEndLinkedList = test.iteratorRemoveTestForList(linkedList, amountOfElements);
 
         //HashSet
 
@@ -108,7 +113,7 @@ public class TestForSmallAmountOfElements {
         long removeValueHashSet = test.removeTestForSet(hashSet);
 
         // contains() testing.
-        long containsValueHashSet = test.containsTestForCollection(hashSet, smallAmountOfElements);
+        long containsValueHashSet = test.containsTestForCollection(hashSet, amountOfElements);
 
         //TreeSet
 
@@ -122,13 +127,13 @@ public class TestForSmallAmountOfElements {
         long removeValueTreeSet = test.removeTestForSet(treeSet);
 
         // contains() testing.
-        long containsValueTreeSet = test.containsTestForCollection(treeSet, smallAmountOfElements);
-
+        long containsValueTreeSet = test.containsTestForCollection(treeSet, amountOfElements);
 
         // creating table's columns and rows with methods' names and time implementation results.
 
         String leftAlignFormat = "| %-21s | %-9d | %-9d | %-9d | %-9d |%n";
 
+        String tableOfContents = "RESULTS OF THE TEST FOR " + amountOfElements + " ELEMENTS.\n";
         String line1 = String.format("+-----------------------+-----------+-----------+-----------+-----------+%n");
         String line2 = String.format("|Method name/Coll. type | ArrayList | LinkedList|  HashSet  |  TreeSet  |%n");
         String line3 = String.format("+-----------------------+-----------+-----------+-----------+-----------+%n");
@@ -160,21 +165,27 @@ public class TestForSmallAmountOfElements {
         StringBuilder totalDataForTable = new StringBuilder();
 
         // building the table withe lines and columns;
-        String writtenDataInFile = totalDataForTable.append(line1).append(line2).append(line3).append(line4).append(line5).append(line6).
+        writtenDataInFile = totalDataForTable.append(tableOfContents).append(line1).append(line2).append(line3).append(line4).append(line5).append(line6).
                 append(line7).append(line8).append(line9).append(line10).append(line11).append(line12).append(line13).
                 append(line14).append(line15).append(line16).append(line17).append(line18).append(line19).append(line20).
                 append(line21).append(line22).append(line23).append(line24).append(line25).append(line26).toString();
 
-        //Printing on console.
+    }
+
+    /**
+     * Printing the table with results of the test.
+     */
+    void printResults() {
         System.out.println(writtenDataInFile);
+    }
 
-        // File creating and writing in it.
-        try {
-            FileWriterForTable.fileWriter(smallAmountOfElements, writtenDataInFile);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+    /**
+     * Writing results into new created file.
+     *
+     * @throws IOException
+     */
+    void writeResultsToFile() throws IOException {
+        FileWriterForTable.fileWriter(amountOfElements, writtenDataInFile);
     }
 }
 

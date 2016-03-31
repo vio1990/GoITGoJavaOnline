@@ -9,7 +9,7 @@ import java.nio.charset.CharacterCodingException;
 /**
  * File creation ad writing data in it.
  */
-public class FileWriterForTable {
+public final class FileWriterForTable {
 
     /**
      * Method creates the file in default directory.

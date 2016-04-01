@@ -2,7 +2,11 @@ package com.ozerian.enterprise.module3_2;
 
 import com.ozerian.enterprise.module3_2.interfaces.SquareSum;
 
-public class ArraySquareSum implements SquareSum{
+import java.util.concurrent.Phaser;
+
+public class ArraySquareSum implements SquareSum {
+
+    Phaser phaser = new Phaser();
 
     @Override
     public long getSquareSum(int[] values, int numberOfThreads) {

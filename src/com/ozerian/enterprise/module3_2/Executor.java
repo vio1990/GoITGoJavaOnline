@@ -7,7 +7,10 @@ public class Executor {
 
     public void runTask(Runnable task, int threadQuantity) {
         ExecutorService executor = Executors.newFixedThreadPool(threadQuantity);
-        executor.execute(task);
+        for (int i = 0; i < threadQuantity; i++) {
+            executor.execute(task);
+
+        }
         executor.shutdown();
         System.out.println("Task is complete!");
     }

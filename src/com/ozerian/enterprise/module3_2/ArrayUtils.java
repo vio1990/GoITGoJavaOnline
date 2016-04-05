@@ -3,37 +3,61 @@ package com.ozerian.enterprise.module3_2;
 import com.ozerian.enterprise.module3_2.interfaces.SquareSum;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Random;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.Phaser;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
 
 public class ArrayUtils implements SquareSum {
-    private int begin = 0;
-    private int partLength = 0;
-    private AtomicInteger result = new AtomicInteger(0);
-    Phaser phaser = new Phaser();
-    List<Integer[]> array = new ArrayList<>();
+
+    private int numbersOfThread;
+
+    public ArrayUtils(int numbersOfThread) {
+        this.numbersOfThread = numbersOfThread;
+    }
+
+    private List<CalculateThread> taskList = new ArrayList<>();
+    private ExecutorService executor = Executors.newFixedThreadPool(numbersOfThread);
+    private final Phaser phaser = new Phaser();
+    private AtomicLong result = new AtomicLong(0);
 
     @Override
     public long getSquareSum(int[] values, int numberOfThreads) {
-        partLength = values.length / numberOfThreads;
-        partLength = (values.length % numberOfThreads > 0) ? partLength + 1 : partLength;
-
-        for (int i = begin; i < partLength; i++) {
-            int number = values[i] * values[i];
-             result.addAndGet(number);
+        fillTasksList(values, numberOfThreads);
+        phaser.register();
+        for (CalculateThread task : taskList) {
+            phaser.register();
+            executor.execute(task);
+            phaser.arriveAndAwaitAdvance();
+            result.addAndGet(task.getPartResult());
+            executor.shutdown();
         }
-        phaser.arriveAndAwaitAdvance();
+        phaser.arriveAndDeregister();
         return result.longValue();
     }
 
-    public static int[] getArray(int size) {
-        Random random = new Random();
-        int[] numbers = new int[size];
-        for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = random.nextInt(100);
+    public int[] arrayPartDivider(int[] values, int startIndex, int endIndex) {
+        int[] partOfArray = Arrays.copyOfRange(values, startIndex, endIndex);
+        return partOfArray;
+    }
+
+    public void fillTasksList(int[] values, int numberOfThread) {
+
+        int partLength = values.length / numberOfThread;
+        int startIndex = 0;
+        int endIndex = 0;
+
+        for (int i = 0; i < numberOfThread; i++) {
+            startIndex = i * partLength;
+            if (i == numberOfThread - 1) {
+                endIndex = values.length;
+            } else {
+                endIndex = (i + 1) * partLength;
+            }
+            int[] arrayPart = arrayPartDivider(values, startIndex, endIndex);
+            taskList.add(new CalculateThread(arrayPart));
         }
-        return numbers;
     }
 }

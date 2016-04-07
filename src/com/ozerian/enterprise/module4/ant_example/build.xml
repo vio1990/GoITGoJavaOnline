@@ -1,4 +1,4 @@
-<project name="ant-project-executor-example" basedir="D:\GitProjectHomeworks\GoITGoJavaOnline\">
+<project name="ant-assembly-module2-with-tests" basedir="D:\GitProjectHomeworks\GoITGoJavaOnline\">
 
     <property name="src" location="src\com\ozerian\enterprise\module2"/>
     <property name="build" location="src\com\ozerian\enterprise\module4\ant_example\build"/>

@@ -1,0 +1,30 @@
+<project name="ant-project-assembly-module1" basedir="D:\GoJavaOnlineHomeworks\GoITGoJavaOnline\">
+
+    <property name="src" location="src\com\ozerian\enterprise\module1"/>
+    <property name="build" location="src\com\ozerian\enterprise\module4\ant_assembly_module1\build"/>
+    <property name="dist" location="src\com\ozerian\enterprise\module4\ant_assembly_module1\dist"/>
+
+    <target name="init">
+        <mkdir dir="${build}"/>
+        <mkdir dir="${dist}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src}" destdir="${build}" source="1.8" target="1.8"/>
+    </target>
+
+    <target name="dist" depends="compile">
+        <jar destfile="${dist}\antProjectExampleModule1.jar">
+            <fileset dir="${build}"/>
+            <manifest>
+                <attribute name="Main-Class" value="com.ozerian.enterprise.module1.TestRunning"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="clean">
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
+    </target>
+
+</project>

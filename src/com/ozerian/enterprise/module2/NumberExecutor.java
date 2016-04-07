@@ -19,7 +19,7 @@ public class NumberExecutor implements Executor<Number> {
     private Validator<Number> resultValidator = new NumberValidator();
     private Task<? extends Number> task;
     private Validator<? super Number> validator;
-    private static boolean isExecuteLaunched = false;
+    private boolean isExecuteLaunched = false;
 
     /**
      * Add a task to perform. It means that the task is being added to the taskList.

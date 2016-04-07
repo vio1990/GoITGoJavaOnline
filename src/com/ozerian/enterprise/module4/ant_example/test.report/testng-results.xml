@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="16" started-at="2016-04-07T15:53:06Z" finished-at="2016-04-07T15:53:06Z">
+    <groups>
+    </groups>
+    <test name="Executor Test" duration-ms="16" started-at="2016-04-07T15:53:06Z" finished-at="2016-04-07T15:53:06Z">
+      <class name="com.ozerian.enterprise.module2.NumberExecutorTest">
+        <test-method status="PASS" signature="ExecuteWithValidator()[pri:0, instance:com.ozerian.enterprise.module2.NumberExecutorTest@24273305]" name="ExecuteWithValidator" duration-ms="5" started-at="2016-04-07T18:53:06Z" finished-at="2016-04-07T18:53:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteWithValidator -->
+        <test-method status="PASS" signature="ExecuteWithValidatorInvalid()[pri:0, instance:com.ozerian.enterprise.module2.NumberExecutorTest@24273305]" name="ExecuteWithValidatorInvalid" duration-ms="0" started-at="2016-04-07T18:53:06Z" finished-at="2016-04-07T18:53:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteWithValidatorInvalid -->
+      </class> <!-- com.ozerian.enterprise.module2.NumberExecutorTest -->
+    </test> <!-- Executor Test -->
+  </suite> <!-- Suite1 -->
+</testng-results>

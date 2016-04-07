@@ -1,0 +1,70 @@
+<project name="ant-project-executor-example" basedir="D:\GitProjectHomeworks\GoITGoJavaOnline\">
+
+    <property name="src" location="src\com\ozerian\enterprise\module2"/>
+    <property name="build" location="src\com\ozerian\enterprise\module4\ant_example\build"/>
+    <property name="dist" location="src\com\ozerian\enterprise\module4\ant_example\dist"/>
+    <property name="test.src" location="test\com\ozerian\enterprise\module2"/>
+    <property name="test.build" location="src\com\ozerian\enterprise\module4\ant_example\test.build"/>
+    <property name="test.report" location="src\com\ozerian\enterprise\module4\ant_example\test.report"/>
+    <property name="lib" location="lib"/>
+
+    <target name="init">
+        <mkdir dir="${build}"/>
+        <mkdir dir="${test.build}"/>
+        <mkdir dir="${test.report}"/>
+        <mkdir dir="${dist}"/>
+    </target>
+
+    <path id="test.classpath">
+        <pathelement location="${lib}/testng-6.9.10.jar"/>
+        <pathelement location="${lib}/jcommander-1.48.jar"/>
+        <pathelement location="${lib}/bsh-2.0b4.jar"/>
+    </path>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src}" destdir="${build}" source="1.8" target="1.8"/>
+    </target>
+
+    <target name="compile.test" depends="compile">
+        <javac srcdir="${test.src}" destdir="${test.build}" source="1.8" target="1.8">
+            <classpath>
+                <pathelement location="${build}"/>
+                <path refid="test.classpath"/>
+            </classpath>
+        </javac>
+    </target>
+
+    <taskdef name="testng" classname="org.testng.TestNGAntTask">
+        <classpath>
+            <pathelement location="lib/testng-6.9.10.jar"/>
+        </classpath>
+    </taskdef>
+
+    <target name="test" depends="compile.test">
+        <testng outputDir="${test.report}">
+            <classpath>
+                <pathelement location="${test.build}"/>
+                <pathelement location="${build}"/>
+                <path refid="test.classpath"/>
+            </classpath>
+            <xmlfileset dir="${test.src}" includes="testng.xml"/>
+        </testng>
+    </target>
+
+    <target name="dist" depends="test">
+        <jar destfile="${dist}\antProjectExample.jar">
+            <fileset dir="${build}"/>
+            <manifest>
+                <attribute name="Main-Class" value="com.ozerian.enterprise.module2.Test"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="clean">
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
+        <delete dir="${test.build}"/>
+        <delete dir="${test.report}"/>
+    </target>
+
+</project>

@@ -23,7 +23,7 @@ public class Test {
                 numberExecutor.addTask(intTask);
             }
 
-            numberExecutor.addTask(new AddDouble(11.1, 12.3), new NumberValidator());
+            numberExecutor.addTask(new AddDouble(11.2, 12.3), new NumberValidator());
 
             numberExecutor.execute();
 

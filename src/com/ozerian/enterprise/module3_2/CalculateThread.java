@@ -32,12 +32,15 @@ public class CalculateThread implements Callable<Long> {
     @Override
     public Long call() {
         System.out.println(Thread.currentThread().getName() + " start working");
-
+        long startTime = System.nanoTime();
         for (int i = 0; i < numbersArray.length; i++) {
             int elementSquare = numbersArray[i] * numbersArray[i];
             partResult += elementSquare;
         }
-
+        long endTime = System.nanoTime();
+        long calculationTime = endTime - startTime;
+        System.out.println("The time of calculation of " + Thread.currentThread().getName() + " is " + calculationTime);
+        System.out.println("The result of " + Thread.currentThread().getName() + " calculation is " + partResult);
         System.out.println(Thread.currentThread().getName() + " arrive and await. Part of array result " + partResult);
         phaser.arriveAndAwaitAdvance();
         System.out.println(Thread.currentThread().getName() + " stop working!");

@@ -1,6 +1,7 @@
 package com.ozerian.enterprise.module3_2;
 
 
+import java.util.Random;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -9,9 +10,14 @@ import java.util.concurrent.Phaser;
 public class Test {
     public static void main(String[] args) {
 
-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+        Random random = new Random();
+        int[] array = new int[10000];
 
-        int numbersOfThread = 5;
+        for (int i = 0; i < array.length; i++) {
+            array [i] = random.nextInt(100);
+        }
+
+        int numbersOfThread = 4;
 
         Phaser phaser = new Phaser();
         ExecutorService executor = Executors.newCachedThreadPool();
